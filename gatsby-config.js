@@ -1,36 +1,36 @@
+const { meta, manifest, analytics } = require('./config/siteData');
+
 module.exports = {
-    siteMetadata: {
-        title: 'portfolio',
-    },
+    siteMetadata: meta,
     plugins: [
-        'gatsby-plugin-styled-components',
+        //google analytics
         {
             resolve: 'gatsby-plugin-google-analytics',
-            options: {
-                trackingId: 'UA-185840418-1',
-                head: true,
-            },
+            options: analytics,
         },
-        'gatsby-plugin-sharp',
+
+        //site configs
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
         'gatsby-plugin-offline',
         {
             resolve: 'gatsby-plugin-manifest',
-            options: {
-                icon: 'src/images/icon.png',
-            },
+            options: manifest,
         },
-        'gatsby-plugin-mdx',
+
+        //images transformer & source images
+        'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'images',
-                path: './src/images/',
+                path: './src/static/images',
             },
             __key: 'images',
         },
+
+        //source pages
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -39,5 +39,8 @@ module.exports = {
             },
             __key: 'pages',
         },
+        //others
+        'gatsby-plugin-styled-components',
+        'gatsby-plugin-mdx',
     ],
 };
