@@ -1,4 +1,4 @@
-const { meta, manifest, analytics } = require('./config/siteData');
+const { meta, manifest, analytics } = require('./config/SiteConfig');
 
 module.exports = {
     siteMetadata: meta,
@@ -38,6 +38,14 @@ module.exports = {
                 path: './src/pages/',
             },
             __key: 'pages',
+        },
+        //nprogress
+        {
+            resolve: 'gatsby-plugin-nprogress',
+            options: {
+                color: manifest.theme_color,
+                showSpinner: false,
+            },
         },
         //others
         'gatsby-plugin-styled-components',

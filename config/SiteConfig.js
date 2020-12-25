@@ -1,16 +1,17 @@
 const meta = {
     title: 'Rohit Bakoliya - Portfolio',
-    discription: 'Rohit Bakoliya - Full stack web developer and Competitive programmer',
+    description: 'Rohit Bakoliya - Full stack web developer and Competitive programmer',
     author: 'Rohit Bakoliya',
     siteUrl: 'https://rohitbakoliya.github.io',
     siteLogo: 'src/static/icon.png',
-    // siteBanner: 'src/static/site-banner.png'
+    twitter: '@Rohit_Bakoliya',
 };
 
 const manifest = {
     name: 'Rohit Bakoliya',
     short_name: 'Rohit Bakoliya',
-    discription: meta.discription,
+    description: meta.description,
+    orientation: 'portrait',
     start_url: '/',
     lang: 'en',
     display: 'standalone',
