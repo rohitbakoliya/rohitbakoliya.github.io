@@ -6,4 +6,8 @@ export const RootWrapper = styled(Wrapper)`
     /* padding-top: 100px; */
     margin-bottom: 50px;
     min-height: calc(100vh - 125px);
+
+    @media ${props => props.theme.media.tablet} {
+        margin-top: 50px;
+    }
 `;
