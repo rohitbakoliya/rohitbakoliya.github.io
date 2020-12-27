@@ -48,7 +48,7 @@ const ToggleSwitchWrapper = styled.div`
     }
     #btn {
         .knobs:before {
-            content: 'Dark';
+            content: 'dark';
             position: absolute;
             top: 0px;
             left: 0px;
@@ -66,7 +66,7 @@ const ToggleSwitchWrapper = styled.div`
             transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) all;
         }
         .checkbox:checked + .knobs:before {
-            content: 'Light';
+            content: 'light';
             left: 21px;
             background-color: ${p => p.theme.primaryColor};
         }

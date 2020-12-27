@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import { Scrollbar } from './Scrollbar';
 
 const GlobalStyles = createGlobalStyle`
     /* Normalize css */
@@ -41,6 +42,8 @@ const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         margin: 0;
         line-height: 150%;
+        font-family: ${p => p.theme.secondaryFontFamily};
+        color: ${p => p.theme.primaryText}
     }
     ul {
         list-style: none;
@@ -49,5 +52,9 @@ const GlobalStyles = createGlobalStyle`
         line-height: 150%;
     }
 
+    /* Scrollbar css */
+    @media all and (min-width: 450px) {
+        ${Scrollbar};
+    }
 `;
 export default GlobalStyles;

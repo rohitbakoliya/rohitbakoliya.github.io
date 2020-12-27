@@ -54,7 +54,10 @@
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "typeface-lato": "^1.1.13",
+    "typeface-montserrat": "^1.1.13",
+    "typeface-nunito": "^1.1.13"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
