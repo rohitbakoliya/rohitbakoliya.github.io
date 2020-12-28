@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../../static/logo.png';
+import logo from '../../../static/logo-white.svg';
 import { FooterContent, FooterWrapper } from './Footer.style';
 
 const Footer = () => (
