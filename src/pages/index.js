@@ -7,7 +7,7 @@ const IndexPage = () => (
     <Layout>
         <SEO />
         <Home />
-        <center>
+        <center style={{ marginTop: '100vh' }}>
             {' '}
             <span role="img" aria-label="construction logo">
                 🚧

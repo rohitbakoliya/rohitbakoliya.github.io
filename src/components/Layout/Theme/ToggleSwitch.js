@@ -6,7 +6,7 @@ const ToggleSwitch = () => {
     const { toggleTheme, theme } = useContext(ThemeContext);
     return (
         <ToggleSwitchWrapper>
-            <div className="label switch" id="btn">
+            <div className="label switch">
                 <input
                     type="checkbox"
                     aria-label="toggle theme"

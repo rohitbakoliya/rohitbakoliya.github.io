@@ -12,6 +12,7 @@ import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 import GlobalStyles from '../../styles/GlobalStyles';
 import { RootWrapper } from './Layout.style';
+import '../common/fontLib';
 
 setConfiguration({ breakpoints: [480, 768, 1000, 1200] });
 

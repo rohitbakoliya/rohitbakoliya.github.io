@@ -46,7 +46,7 @@ const ToggleSwitchWrapper = styled.div`
     .knobs {
         z-index: 2;
     }
-    #btn {
+    .switch {
         .knobs:before {
             content: 'dark';
             position: absolute;
