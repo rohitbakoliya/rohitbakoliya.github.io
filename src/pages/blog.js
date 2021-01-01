@@ -1,15 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
+import UnderConstruction from '../components/UnderConstruction/UnderConstruction';
 
 const Blog = () => {
     return (
         <Layout>
-            <center>
-                <span role="img" aria-label="construction logo">
-                    🚧
-                </span>{' '}
-                Under Construction
-            </center>
+            <UnderConstruction page="BlogsPage" />
         </Layout>
     );
 };

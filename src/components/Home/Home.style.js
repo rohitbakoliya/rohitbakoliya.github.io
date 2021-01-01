@@ -48,19 +48,21 @@ export const Intro = styled.section`
             font-size: 2.5rem;
             font-weight: 800;
         }
-        .title {
-            font-size: 1.06rem;
-        }
         p {
             font-family: ${props => props.theme.fontFamily};
         }
+        .title {
+            font-size: 1.06rem;
+            font-weight: 500;
+        }
         &__cta {
-            /* width: max-content; */
+            width: max-content;
             a {
-                display: inline-block;
                 margin: 30px 0;
             }
             &__social {
+                display: flex;
+                justify-content: space-between;
             }
         }
         @media ${props => props.theme.media.tablet} {

@@ -2,18 +2,13 @@ import React from 'react';
 import Home from '../components/Home/Home';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO/SEO';
+import UnderConstruction from '../components/UnderConstruction/UnderConstruction';
 
 const IndexPage = () => (
     <Layout>
         <SEO />
         <Home />
-        <center style={{ marginTop: '100vh' }}>
-            {' '}
-            <span role="img" aria-label="construction logo">
-                🚧
-            </span>{' '}
-            Under Construction
-        </center>
+        <UnderConstruction />
     </Layout>
 );
 export default IndexPage;

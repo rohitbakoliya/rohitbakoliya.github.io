@@ -32,6 +32,14 @@ export const NavItem = styled.li`
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    a {
+        color: ${p => (p.theme.dark ? p.theme.primaryText : p.theme.primaryColor)};
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: ${p => (p.theme.dark ? p.theme.primaryColor : p.theme.primaryText)};
+    }
 `;
 
 export const NavItems = styled.ul`

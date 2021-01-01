@@ -11,7 +11,7 @@ const SmoothLinks = () => {
         <>
             {links.map(link => (
                 <NavItem key={link}>
-                    <SLink to={link} offset={link === 'home' ? -70 : -100} hashSpy>
+                    <SLink to={link} offset={-100} hashSpy={link !== 'home'}>
                         {link}
                     </SLink>
                 </NavItem>
@@ -25,7 +25,7 @@ const DefaultLinks = () => {
         <>
             {links.map(link => (
                 <NavItem key={link}>
-                    <Link to={`/#${link}`}>{link}</Link>
+                    <Link to={link !== 'home' ? `/#${link}` : `/`}>{link}</Link>
                 </NavItem>
             ))}
         </>

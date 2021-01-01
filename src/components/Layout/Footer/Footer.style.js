@@ -6,7 +6,8 @@ export const FooterWrapper = styled.footer`
     padding: 10px;
     background: ${p => (p.theme.dark ? p.theme.secondaryColor : p.theme.gradient)};
 
-    p {
+    p,
+    .emoji {
         font-size: 1rem;
         line-height: 35px;
         color: white;

@@ -3,7 +3,8 @@ import React from 'react';
 import { HomeWrapper, Intro } from './Home.style';
 // import heroVectorBottom from '../../static/hero_vector_bottom.svg';
 import heroVectorRight from '../../static/hero_vector_right.svg';
-import Button from '../common/Button';
+import { Button, IconButton } from '../common/Button';
+import { social } from '../../../config/SiteConfig';
 
 const Home = () => {
     return (
@@ -19,7 +20,11 @@ const Home = () => {
                         <Button as="a" href="#">
                             Download Resume
                         </Button>
-                        <div className="home__text__cta__social"></div>
+                        <div className="home__text__cta__social">
+                            <IconButton label="github" icon={['fab', 'github']} href={social.github} />
+                            <IconButton label="linkedIn" icon={['fab', 'linkedin-in']} href={social.linkedin} />
+                            <IconButton label="facebook" icon={['fab', 'facebook-f']} href={social.facebook} />
+                        </div>
                     </div>
                 </div>
             </Intro>

@@ -25,8 +25,18 @@ const analytics = {
     head: true,
 };
 
+const social = {
+    github: 'https://github.com/rohitbakoliya',
+    facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
+    linkedin: 'https://www.linkedin.com/in/rohit-bakoliya-766097177',
+    codeforce: 'https://codeforces.com/profile/rohitbakoliya',
+    codechef: 'https://www.codechef.com/users/rohitbakoliya',
+    hackerearth: 'https://www.hackerearth.com/@rohitbakoliya',
+    stackoverflow: 'https://stackoverflow.com/users/11922517/rohit-bakoliya'
+}
 module.exports = {
     meta,
     manifest,
     analytics,
+    social
 };
