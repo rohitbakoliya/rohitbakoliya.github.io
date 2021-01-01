@@ -21,7 +21,7 @@ const NFContent = styled.section`
         text-align: center;
     }
     .lottie {
-        max-width: 400px;
+        max-width: 500px;
     }
 `;
 
