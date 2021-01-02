@@ -22,7 +22,8 @@ const UCStyle = styled.div`
             flex-direction: column;
         }
     }
-    img {
+    img,
+    .lottie {
         flex-grow: 0.7;
         max-width: 600px;
     }
@@ -31,7 +32,8 @@ const UCStyle = styled.div`
         display: flex;
         align-items: center;
         flex-direction: column;
-        img {
+        img,
+        .lottie {
             max-width: 450px;
         }
     }

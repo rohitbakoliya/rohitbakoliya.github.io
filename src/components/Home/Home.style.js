@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { slideDownKeyframe } from '../common/cssAnimation';
 
-export const HomeWrapper = styled.div`
+export const HomeWrapper = styled.section`
     .vector-bottom {
         position: absolute;
         bottom: 0;
@@ -60,9 +60,10 @@ export const Intro = styled.section`
             a {
                 margin: 30px 0;
             }
-            &__social {
+            &__quickLinks {
                 display: flex;
                 justify-content: space-between;
+                font-size: 24px;
             }
         }
         @media ${props => props.theme.media.tablet} {

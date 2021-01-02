@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from '../../../static/logo-white.svg';
 import { FooterContent, FooterWrapper } from './Footer.style';
-import { social } from '../../../../config/SiteConfig';
+import { quickLinks } from '../../../../config/SiteConfig';
 const Footer = () => (
     <FooterWrapper>
         <FooterContent>
@@ -17,7 +17,7 @@ const Footer = () => (
                     &nbsp;gatsby&nbsp;
                 </a>
                 by
-                <a href={social.github} target="__blank">
+                <a href={quickLinks.github} target="__blank">
                     &nbsp;me
                 </a>
             </p>

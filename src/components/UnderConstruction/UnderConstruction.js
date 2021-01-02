@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import UCStyle from './UnderConstruction.style';
-import { social } from '../../../config/SiteConfig';
+import { quickLinks } from '../../../config/SiteConfig';
 
-import UcImg from '../../static/under_construction.svg';
+// import UcImg from '../../static/under_construction.svg';
+import UcCoffee from '../../static/lottie/under_construction';
+import DisplayLottie from '../common/DisplayLottie';
 
 const UnderConstruction = ({ page }) => (
     <UCStyle>
@@ -13,13 +15,16 @@ const UnderConstruction = ({ page }) => (
             <p>I'm currently working on this page and will be back up soon.</p>
             <p>
                 While you are waiting, why don't you check out my{' '}
-                <a target="__black" href={social.github}>
+                <a target="__black" href={quickLinks.github}>
                     Github
                 </a>{' '}
                 profile.
             </p>
         </div>
-        <img src={UcImg} alt="" />
+        {/* <img src={UcImg} alt="" /> */}
+        <div className="lottie">
+            <DisplayLottie animationData={UcCoffee} />
+        </div>
     </UCStyle>
 );
 

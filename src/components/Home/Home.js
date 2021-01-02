@@ -3,8 +3,9 @@ import React from 'react';
 import { HomeWrapper, Intro } from './Home.style';
 // import heroVectorBottom from '../../static/hero_vector_bottom.svg';
 import heroVectorRight from '../../static/hero_vector_right.svg';
-import { Button, IconButton } from '../common/Button';
-import { social } from '../../../config/SiteConfig';
+import { quickLinks } from '../../../config/SiteConfig';
+import Button from '../common/Button';
+import IconLink from '../common/IconLink';
 
 const Home = () => {
     return (
@@ -20,10 +21,10 @@ const Home = () => {
                         <Button as="a" href="#">
                             Download Resume
                         </Button>
-                        <div className="home__text__cta__social">
-                            <IconButton label="github" icon={['fab', 'github']} href={social.github} />
-                            <IconButton label="linkedIn" icon={['fab', 'linkedin-in']} href={social.linkedin} />
-                            <IconButton label="facebook" icon={['fab', 'facebook-f']} href={social.facebook} />
+                        <div className="home__text__cta__quickLinks">
+                            <IconLink label="github" icon={['fab', 'github']} href={quickLinks.github} />
+                            <IconLink label="linkedIn" icon={['fab', 'linkedin-in']} href={quickLinks.linkedin} />
+                            <IconLink label="facebook" icon={['fab', 'facebook-f']} href={quickLinks.facebook} />
                         </div>
                     </div>
                 </div>

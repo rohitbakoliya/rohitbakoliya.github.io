@@ -18,8 +18,9 @@ setConfiguration({ breakpoints: [480, 768, 1000, 1200] });
 
 const Layout = ({ children }) => {
     const [theme, toggleTheme] = useTheme();
+    let currentTheme = theme === 'light' ? themelight : themedark;
     return (
-        <ThemeProvider theme={theme === 'light' ? themelight : themedark}>
+        <ThemeProvider theme={currentTheme}>
             <GlobalStyles />
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <Navbar />
