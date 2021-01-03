@@ -22,7 +22,9 @@ const GlobalStyles = createGlobalStyle`
         color: ${p => p.theme.primaryText};
         transition: background-color .2s;
     }
-
+    #___gatsby {
+        overflow-x: hidden;
+    }
     a {
         color: ${p => p.theme.primaryColor};
         text-decoration: none;
@@ -33,6 +35,10 @@ const GlobalStyles = createGlobalStyle`
 
     .active {
         color: #383838;
+    }
+    .invalid {
+        color: #e81b1b !important;
+        box-shadow: 0 0 0px 1px #e81b1b;
     }
     h1, h2, h3, h4, h5, h6{
         margin: 10px 0;
