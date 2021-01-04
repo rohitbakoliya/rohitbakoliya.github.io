@@ -49,6 +49,7 @@ const Contact = () => {
                             onChange={handleInput}
                             value={formData.message}
                             name="message"
+                            placeholder="Type a Message"
                             required
                         />
                     </label>

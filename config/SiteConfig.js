@@ -26,8 +26,8 @@ const analytics = {
 };
 
 const quickLinks = {
-    email: 'bakoliyarohit00@gmail.com',
-    resume: '',
+    email: 'mailto:bakoliyarohit00@gmail.com',
+    resume: '#',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
     linkedin: 'https://www.linkedin.com/in/rohit-bakoliya-766097177',

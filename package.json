@@ -4,6 +4,7 @@
   "private": true,
   "description": "portfolio",
   "author": "rohitbakoliya",
+  "homepage": "https://rohitbakoliya.github.io",
   "keywords": [
     "portfolio",
     "gatsby"
@@ -36,6 +37,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@icons-pack/react-simple-icons": "^3.13.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^1.12.0",

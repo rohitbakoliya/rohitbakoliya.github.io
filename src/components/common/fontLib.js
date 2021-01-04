@@ -3,16 +3,12 @@ import { library, config } from '@fortawesome/fontawesome-svg-core';
 
 import {
     faGithub,
-    faJs,
-    faHtml5,
-    faCss3,
     faCodepen,
-    faReact,
-    faNode,
     faFacebookF,
     faLinkedinIn,
     faInstagram,
     faTwitter,
+    faGoogle,
 } from '@fortawesome/free-brands-svg-icons';
 
 import { faHandshake, faPaperPlane, faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -20,12 +16,8 @@ import { faHandshake, faPaperPlane, faHeart } from '@fortawesome/free-solid-svg-
 library.add(
     // brand icons
     faGithub,
-    faJs,
-    faHtml5,
-    faCss3,
     faCodepen,
-    faReact,
-    faNode,
+    faGoogle,
     faLinkedinIn,
     faFacebookF,
     faInstagram,

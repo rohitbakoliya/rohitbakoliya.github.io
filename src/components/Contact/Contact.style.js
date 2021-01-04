@@ -67,6 +67,7 @@ export const ContactForm = styled.form`
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
+        'title title'
         'email name'
         'textarea textarea'
         '. button';
@@ -84,7 +85,10 @@ export const ContactForm = styled.form`
     .label__message {
         grid-area: textarea;
     }
-
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
     .submit__btn {
         justify-self: end;
         width: fit-content;

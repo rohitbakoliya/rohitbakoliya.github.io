@@ -18,13 +18,13 @@ const Home = () => {
                     <h1>ROHIT BAKOLIYA</h1>
                     <p className="title">WEB DEVELOPER & COMPETITIVE PROGRAMMER</p>
                     <div className="home__text__cta">
-                        <Button as="a" href="#">
-                            Download Resume
+                        <Button as="a" href={quickLinks.resume}>
+                            Get My Resume
                         </Button>
                         <div className="home__text__cta__quickLinks">
+                            <IconLink label="email" icon={['fab', 'google']} href={quickLinks.email} />
                             <IconLink label="github" icon={['fab', 'github']} href={quickLinks.github} />
                             <IconLink label="linkedIn" icon={['fab', 'linkedin-in']} href={quickLinks.linkedin} />
-                            <IconLink label="facebook" icon={['fab', 'facebook-f']} href={quickLinks.facebook} />
                         </div>
                     </div>
                 </div>
