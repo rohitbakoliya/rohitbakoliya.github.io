@@ -29,8 +29,25 @@ module.exports = {
             },
             __key: 'images',
         },
-
-        //source pages
+        //source file system
+        //- source JSON
+        'gatsby-transformer-json',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'json',
+                path: './content/json'
+            }
+        },
+        //- source markdown
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'blogs',
+                path: './content/blogs'
+            }
+        },
+        //source static pages
         {
             resolve: 'gatsby-source-filesystem',
             options: {

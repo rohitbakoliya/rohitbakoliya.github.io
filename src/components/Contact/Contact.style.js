@@ -20,6 +20,7 @@ export const ContactBox = styled.div`
         width: 100%;
         padding: 10px;
         margin-top: 50px;
+        height: unset;
     }
 `;
 export const LeftContent = styled.div`

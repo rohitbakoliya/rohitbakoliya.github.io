@@ -3,9 +3,9 @@ import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO/SEO';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
-import Contact from '../components/Contact/Contact';
 import Skills from '../components/Skills/Skills';
-// import UnderConstruction from '../components/UnderConstruction/UnderConstruction';
+import Projects from '../components/Projects/Projects';
+import Contact from '../components/Contact/Contact';
 
 const IndexPage = () => (
     <Layout>
@@ -13,7 +13,7 @@ const IndexPage = () => (
         <Home />
         <About />
         <Skills />
-        {/* <UnderConstruction /> */}
+        <Projects />
         <Contact />
     </Layout>
 );

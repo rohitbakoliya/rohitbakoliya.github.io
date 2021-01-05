@@ -1,8 +1,24 @@
 import styled from 'styled-components';
 
-export const SkillsWrapper = styled.section``;
+export const SkillsWrapper = styled.section`
+    ${props => props.theme.spacing.sectionBottom};
+    position: relative;
+    .skills__word-clouds {
+        @media ${props => props.theme.media.tablet} {
+            display: none;
+        }
 
-export const SkillsContent = styled.div``;
+        p {
+            position: absolute;
+            color: ${props => props.theme.accentColor};
+            z-index: -1;
+            left: 0;
+            right: 0;
+            font-weight: 900;
+        }
+        z-index: -1;
+    }
+`;
 
 export const SkillsIconsWrapper = styled.div`
     color: ${props => props.theme.primaryColor};
@@ -15,9 +31,5 @@ export const SkillsIconsWrapper = styled.div`
         width: 50px;
         height: 50px;
         margin: 30px;
-        transition: all 200ms ease-out;
     }
-    /* svg:hover {
-        transform: scale(1.2);
-    } */
 `;

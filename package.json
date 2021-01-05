@@ -19,17 +19,6 @@
     "format:js": "prettier --write \"**/*.{js,jsx}\"",
     "format:styles": "prettier --write \"**/*.{css,scss}\""
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./src/**/*.js": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -53,6 +42,7 @@
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-plugin-styled-components": "^3.7.0",
     "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-transformer-json": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -61,6 +51,8 @@
     "react-helmet": "^6.1.0",
     "react-lottie": "^1.2.3",
     "react-scroll": "^1.8.1",
+    "react-slick": "^0.27.13",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
     "typeface-lato": "^1.1.13",

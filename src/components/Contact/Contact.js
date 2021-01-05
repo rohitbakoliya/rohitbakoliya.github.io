@@ -27,7 +27,7 @@ const Contact = () => {
                             name="_replyto"
                             type="email"
                             required
-                            placeholder="john@exp.com"
+                            placeholder="example@gmail.com"
                         />
                     </label>
                     <label className="label__name">
@@ -39,7 +39,7 @@ const Contact = () => {
                             name="name"
                             type="text"
                             required
-                            placeholder="John Doe"
+                            placeholder="Your Name"
                         />
                     </label>
                     <label className="label__message">
