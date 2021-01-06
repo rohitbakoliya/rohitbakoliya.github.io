@@ -36,16 +36,63 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'json',
-                path: './content/json'
-            }
+                path: `${__dirname}/content/json`,
+            },
         },
-        //- source markdown
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    `gatsby-remark-embedder`,
+                    {
+                        resolve: `gatsby-remark-autolink-headers`,
+                        options: {
+                            className: `gatsby-remark-autolink`,
+                            maintainCase: true,
+                            removeAccents: true,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-embed-snippet`,
+                        options: {
+                            directory: `${__dirname}`,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            classPrefix: 'language-',
+                            inlineCodeMarker: null,
+                            aliases: {},
+                            showLineNumbers: true,
+                            noInlineHighlight: false,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 590,
+                            showCaptions: true,
+                        },
+                    },
+                ],
+            },
+        },
+        //source markdown - blogs
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'blogs',
-                path: './content/blogs'
-            }
+                path: `${__dirname}/content/blogs`,
+            },
+        },
+        //source markdown - major projects
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'major-projects',
+                path: `${__dirname}/content/major-projects`,
+            },
         },
         //source static pages
         {

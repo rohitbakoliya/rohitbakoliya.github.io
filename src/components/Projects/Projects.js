@@ -1,9 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import PageHeader from '../common/PageHeader';
-import { ProjectsWrapper } from './Projects.style';
-// import MajorProjects from './MajorProjects';
+import MajorProjects from './MajorProjects';
 import SmallProjects from './SmallProjects';
 
+const ProjectsWrapper = styled.section`
+    ${props => props.theme.sectionBottom}
+`;
 const Projects = () => (
     <ProjectsWrapper id="projects">
         <PageHeader>My Projects</PageHeader>
