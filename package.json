@@ -64,6 +64,7 @@
     "styled-normalize": "^8.0.7",
     "typeface-lato": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
+    "typeface-mulish": "^1.1.13",
     "typeface-nunito": "^1.1.13"
   },
   "devDependencies": {

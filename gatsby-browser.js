@@ -1,6 +1,7 @@
 require('typeface-nunito');
 require('typeface-montserrat');
 require('typeface-lato');
+require('typeface-mulish');
 
 require("prismjs/themes/prism-tomorrow.css")
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")

@@ -9,7 +9,7 @@ const themeCommon = {
     shadow: '0px 10px 10px rgba(0, 0, 0, 0.2)',
     shadowSmall: '0px 5px 10px rgba(0, 0, 0, 0.05)',
     fontFamily: '"Montserrat", sans-serif',
-    secondaryFontFamily: '"nunito", sans-serif',
+    secondaryFontFamily: '"mulish", sans-serif',
     otherFontFamily: '"lato", sans-serif',
     spacing: {
         sectionBottom: 'margin-bottom: 100px',
@@ -35,18 +35,6 @@ export const themelight = {
     accentColor: '#C7D0FF',
     primaryBlack: '#383838',
     primaryText: '#383838',
-    ...themeCommon,
-};
-
-export const themedarkblue = {
-    dark: true,
-    bg: '#0B0D18',
-    primaryColor: '#6D83F2',
-    secondaryColor: '#0F1221',
-    accentColor: '#15182E',
-    primaryBlack: '#F8F8F8',
-    elevation0: '#6D83F2',
-    primaryText: '#F8F8F8',
     ...themeCommon,
 };
 
