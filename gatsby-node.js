@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     //{major-projects or blogs}
     const { sourceInstanceName } = fileNode;
 
-    const slug = '/' + sourceInstanceName + '/' + actualSlug + '-' + node.id;
+    const slug = '/' + sourceInstanceName + '/' + actualSlug;
 
     //create slug node field
     createNodeField({

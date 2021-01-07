@@ -2,7 +2,7 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Button, { IconButton } from '../common/Button';
 import IconsLib from '../common/IconsLib';
-import IFrame from '../common/Iframe';
+import IFrame from '../common/IFrame';
 import {
     ProjectsContent,
     ProjectsWrapper,
