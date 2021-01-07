@@ -9,7 +9,7 @@
     },
     {
         "title": "CF Profile",
-        "description": "Flutter application to view Codeforce Profile",
+        "description": "A Flutter based Cross Platform Application to view Codeforce Profile",
         "links": {
             "demo": "https://github.com/rohitbakoliya/codeforces-profile",
             "src": "https://github.com/rohitbakoliya/codeforces-profile"
@@ -25,7 +25,7 @@
     },
     {
         "title": "World Clock App",
-        "description": "Flutter application which shows the time in different citys.",
+        "description": "A Flutter based Cross Platform Application that shows the time in different coutries/citys.",
         "links": {
             "demo": "https://github.com/rohitbakoliya/World_Clock_App",
             "src": "https://github.com/rohitbakoliya/World_Clock_App"

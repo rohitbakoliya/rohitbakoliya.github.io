@@ -10,7 +10,7 @@ const ProjectsWrapper = styled.section`
 const Projects = () => (
     <ProjectsWrapper id="projects">
         <PageHeader>My Projects</PageHeader>
-        {/* <MajorProjects /> */}
+        <MajorProjects />
         <SmallProjects />
     </ProjectsWrapper>
 );

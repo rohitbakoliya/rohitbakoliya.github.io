@@ -10,6 +10,7 @@ const common = css`
     transition: all 200ms ease-out;
     cursor: pointer;
     display: inline-block;
+    text-align: center;
     &:disabled {
         cursor: not-allowed;
         opacity: 0.6;

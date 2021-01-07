@@ -1,18 +1,21 @@
 ---
 title: Chefs Arena
 excerpt:
-    Chef's Arena is a coding platform similar to other online judges, implemented in React.js which helps programmers to
-    participate in ongoing CodeChef contests and creating virtual contests. Participants can see their CodeChef profile,
-    ranks, recent submissions of any problem or contest, and also can run the code in IDE. This application uses the
-    CodeChef API to provide the services.
+    Chef's Arena is a coding platform similar to other online judges which helps programmers to participate in ongoing
+    CodeChef contests and creating virtual contests by searching CodeChef contests and practicing problems within time
+    limits. Participants can see their CodeChef profile, ranks, recent submissions of any problem or contest, and also
+    can run the code in IDE.
 
 iframe: https://www.youtube.com/embed/0TGNclKw8Q4
 demo: http://chefs-arena-rohit.netlify.app/
 src: https://github.com/rohitbakoliya/chefs-arena
 
+tags: [ReactJs, Netlify]
+
 date: 2020-03-20
+
 info:
-    tech: [Reactjs, Netlify]
+    tech: [ReactJs, Netlify]
 ---
 
 ## Quick Links

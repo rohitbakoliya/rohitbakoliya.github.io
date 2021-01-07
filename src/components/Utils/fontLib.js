@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { faHandshake, faPaperPlane, faHeart } from '@fortawesome/free-solid-svg-icons';
-
 library.add(
     // brand icons
     faGithub,
