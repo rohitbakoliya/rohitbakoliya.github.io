@@ -3,7 +3,6 @@ require('typeface-montserrat');
 require('typeface-lato');
 require('typeface-mulish');
 
-require("prismjs/themes/prism-tomorrow.css")
-require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-
-require("prismjs/plugins/command-line/prism-command-line.css")
+require('./src/styles/prism-purpleking-dark.css');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
+require('prismjs/plugins/command-line/prism-command-line.css');

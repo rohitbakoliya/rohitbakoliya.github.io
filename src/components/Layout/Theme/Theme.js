@@ -8,8 +8,10 @@ export const sizes = {
 const themeCommon = {
     shadow: '0px 10px 10px rgba(0, 0, 0, 0.2)',
     shadowSmall: '0px 5px 10px rgba(0, 0, 0, 0.05)',
-    fontFamily: '"Montserrat", sans-serif',
-    secondaryFontFamily: '"mulish", sans-serif',
+    fontFamily:
+        '"Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Apple Color Emoji","sans-serif", "Segoe UI Emoji", "Segoe UI Symbol"',
+    secondaryFontFamily:
+        '"mulish", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Apple Color Emoji","sans-serif", "Segoe UI Emoji", "Segoe UI Symbol"',
     otherFontFamily: '"lato", sans-serif',
     spacing: {
         sectionBottom: 'margin-bottom: 100px',

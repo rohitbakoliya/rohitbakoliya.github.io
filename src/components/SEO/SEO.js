@@ -22,14 +22,13 @@ const SEO = ({ title, description, slug, isBlog }) => {
     title = title || siteMetadata.title;
     description = description || siteMetadata.description;
 
-    let url = siteMetadata.siteUrl;
+    let url = `${siteMetadata.siteUrl}${slug || ''}`;
     let twitter = siteMetadata.twitter;
-    let image = url + mainBanner;
+    let image = siteMetadata.siteUrl + mainBanner;
 
     if (isBlog) {
-        url += slug;
         title += ' | Rohit Bakoliya';
-        //image for blogs
+        //TODO: add og:image for blogs
     }
     return (
         <Helmet>

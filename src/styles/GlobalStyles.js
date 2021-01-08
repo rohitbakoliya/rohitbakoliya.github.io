@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { Scrollbar } from './Scrollbar';
+import BlogCSS from './BlogCSS.style';
+import PrismJsStyles from './prismjs.style';
 
 const GlobalStyles = createGlobalStyle`
     /* Normalize css */
@@ -62,5 +64,11 @@ const GlobalStyles = createGlobalStyle`
     @media all and (min-width: 450px) {
         ${Scrollbar};
     }
+
+    /* Blog CSS */
+    ${BlogCSS}
+
+    /* Prismjs CSS */
+    ${PrismJsStyles}
 `;
 export default GlobalStyles;

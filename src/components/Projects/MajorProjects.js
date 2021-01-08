@@ -54,7 +54,7 @@ const MajorProjects = () => {
                                 <p>{node.frontmatter.excerpt}</p>
                                 <ProjectLinks>
                                     <Button as={Link} to={node.fields.slug}>
-                                        Detailed View
+                                        Details
                                     </Button>
                                     <Button target="__blank" as="a" href={node.frontmatter.demo}>
                                         Live Demo

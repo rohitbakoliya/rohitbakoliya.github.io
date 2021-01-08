@@ -22,6 +22,7 @@ export const BG = styled.div`
 `;
 
 export const InnerContent = styled.div`
+    /* increase padding to increase card-height */
     padding: 170px 0;
     width: 100vw;
     position: relative;
@@ -34,12 +35,18 @@ export const SmallProjectCard = styled.div`
     background-color: ${props => props.theme.bg};
     border-radius: 15px;
     padding: 30px;
+    /* increase height to increase card-height */
     height: 250px;
     h3 {
         margin-bottom: 5px;
     }
     p {
+        display: -webkit-box;
         font-size: 14px;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .smallproject__links {
         display: flex;

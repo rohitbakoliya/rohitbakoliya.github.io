@@ -66,6 +66,11 @@ module.exports = {
                             aliases: {},
                             showLineNumbers: true,
                             noInlineHighlight: false,
+                            prompt: {
+                                user: 'root',
+                                host: 'localhost',
+                                global: true,
+                            },
                         },
                     },
                     {
@@ -84,6 +89,7 @@ module.exports = {
             options: {
                 name: 'blogs',
                 path: `${__dirname}/content/blogs`,
+                ignore: [`${__dirname}/content/blogs/\__*`],
             },
         },
         //source markdown - major projects
@@ -92,6 +98,7 @@ module.exports = {
             options: {
                 name: 'major-projects',
                 path: `${__dirname}/content/major-projects`,
+                ignore: [`${__dirname}/content/major-projects/\__*`],
             },
         },
         //source static pages

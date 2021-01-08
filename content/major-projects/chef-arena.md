@@ -15,22 +15,17 @@ tags: [ReactJs, Netlify]
 date: 2020-03-20
 
 info:
-    tech: [ReactJs, Netlify]
+    tech: [React.js, Materialize CSS, Prism.js, Netlify]
+    links:
+        - [
+              Complete Guide,
+              https://docs.google.com/presentation/d/1Dwo9V5oJQlxyXVn_QLnnFeW_yjr3vzd98-tNW7O4HXA/edit?usp=sharing,
+          ]
 ---
-
-## Quick Links
-
--   [Website](https://chefs-arena-rohit.netlify.com/)
--   [Demo](https://youtu.be/0TGNclKw8Q4)
-
-## Getting more familar
-
--   Go to
-    [Complete Guide](https://docs.google.com/presentation/d/1Dwo9V5oJQlxyXVn_QLnnFeW_yjr3vzd98-tNW7O4HXA/edit?usp=sharing)
 
 ## Key features
 
--   Problem Statements rendering with Markworn and MathJax
+-   Problem Statements rendering with Markdown and MathJax
 -   Builtin IDE with popular themes and language-based highlighting
 -   Virtual contest
 
@@ -40,3 +35,5 @@ info:
 -   Materialize CSS
 -   Prism.Js
 -   Netlify
+
+**More explanation is coming soon...**

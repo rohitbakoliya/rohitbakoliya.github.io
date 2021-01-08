@@ -1,3 +1,4 @@
+const path = require('path');
 const slugify = require('./src/components/Utils/slugify');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -28,4 +29,50 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 };
 
-//TODO: create pages
+//to make all formatterinfo fields optional
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeMarkdownRemarkFrontmatterInfoDefs = `
+      type MarkdownRemarkFrontmatterInfo {
+        idea: String
+        tech: [String]
+        links: [[String]]
+      }
+    `;
+    createTypes(typeMarkdownRemarkFrontmatterInfoDefs);
+};
+
+exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions;
+
+    // **Note:** The graphql function call returns a Promise
+    // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
+    const result = await graphql(`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        id
+                        fields {
+                            slug
+                            posttype
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        if (node.fields.posttype === 'major-projects') {
+            createPage({
+                path: node.fields.slug,
+                component: path.resolve(`./src/templates/project-template.js`),
+                context: {
+                    // Data passed to context is available in page queries as GraphQL variables.
+                    id: node.id,
+                },
+            });
+        }
+    });
+};

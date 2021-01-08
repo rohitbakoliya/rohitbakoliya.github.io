@@ -6,7 +6,7 @@ excerpt:
     2 months trend and daily changes. It also provides information about the COVID symptoms, preventions, transmission
     of COVID, and different helplines in India.
 
-iframe: _major-projects_covid-19india.png
+iframe: major-projects_covid-19india.png
 demo: https://github.com/rohitbakoliya/covid-19INDIA/raw/master/app-release.apk
 src: https://github.com/rohitbakoliya/COVID-19India
 
@@ -22,3 +22,7 @@ info:
         recovered from the virus in their locality, city and their country.
     tech: [Flutter, Dart]
 ---
+
+
+
+**More explanation is coming soon...**

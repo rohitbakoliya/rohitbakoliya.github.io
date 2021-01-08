@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import FluidImg from './FluidImg';
 import Loader from './Loader';
 
-export const IFrameWrapper = styled.div`
+const IFrameWrapper = styled.div`
     position: relative;
     overflow: hidden;
     background-color: ${props => props.theme.accentColor};
