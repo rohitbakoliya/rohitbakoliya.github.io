@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useScreenClass } from 'react-grid-system';
+import Button from '../common/Button';
+
 import IconsLib from '../common/IconsLib';
 import PageHeader from '../common/PageHeader';
 import SubHeading from '../common/SubHeading';
 import { SkillsIconsWrapper, SkillsWrapper } from './Skills.style';
 
 const Skills = () => {
+    const screenClass = useScreenClass();
+    const [showAll, setShowAll] = useState(screenClass !== `xs`);
     return (
         <SkillsWrapper id="skills">
             <PageHeader>My Skillsets</PageHeader>
             <SubHeading>Tech Stacks</SubHeading>
-            <SkillsIconsWrapper>
+            <SkillsIconsWrapper showAll={showAll} collapseHeight="450px">
                 <IconsLib
                     Html5
                     Css3
@@ -34,11 +39,21 @@ const Skills = () => {
                     Heroku
                     Digitalocean
                 />
+
+                {!showAll && (
+                    <Button onClick={() => setShowAll(true)} className="showall__button">
+                        Show all
+                    </Button>
+                )}
             </SkillsIconsWrapper>
-            <SubHeading>Other Tools</SubHeading>
-            <SkillsIconsWrapper>
-                <IconsLib Visualstudiocode Adobeillustrator Npm Yarn Webpack Babel Eslint Git Prettier />
-            </SkillsIconsWrapper>
+            {showAll && (
+                <>
+                    <SubHeading>Other Tools</SubHeading>
+                    <SkillsIconsWrapper showAll={showAll}>
+                        <IconsLib Visualstudiocode Adobeillustrator Npm Yarn Webpack Babel Eslint Git Prettier />
+                    </SkillsIconsWrapper>
+                </>
+            )}
         </SkillsWrapper>
     );
 };
