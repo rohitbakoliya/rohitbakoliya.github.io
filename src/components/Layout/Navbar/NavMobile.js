@@ -7,16 +7,20 @@ import { NavMobileWrapper, MenuButton } from './NavMobile.style';
 
 const NavMobile = () => {
     const [isMenuOpen, setMenu] = useState(false);
+
+    const handleCloseMenu = () => {
+        setMenu(!isMenuOpen);
+    };
     return (
-        <NavMobileWrapper className={`mobile-menu__container ${isMenuOpen ? 'active' : ''}`}>
-            <MenuButton onClick={() => setMenu(!isMenuOpen)} className={`menu__button ${isMenuOpen ? 'active' : ''}`}>
+        <NavMobileWrapper className={`${isMenuOpen ? 'active' : ''}`}>
+            <MenuButton onClick={() => setMenu(!isMenuOpen)} className={`${isMenuOpen ? 'active' : ''}`}>
                 <Burger open={isMenuOpen} />
             </MenuButton>
             <div className="nav">
                 <div className="nav__content">
                     <NavItems className="nav__list">
-                        <NavLinks />
-                        <NavItem>
+                        <NavLinks closeMenuInMob={handleCloseMenu} />
+                        <NavItem onClick={handleCloseMenu}>
                             <ToggleSwitch />
                         </NavItem>
                     </NavItems>
