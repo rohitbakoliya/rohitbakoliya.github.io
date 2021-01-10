@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useScreenClass } from 'react-grid-system';
 import Button from '../common/Button';
 
@@ -10,6 +10,14 @@ import { SkillsIconsWrapper, SkillsWrapper } from './Skills.style';
 const Skills = () => {
     const screenClass = useScreenClass();
     const [showAll, setShowAll] = useState(screenClass !== `xs`);
+
+    useEffect(() => {
+        if (screenClass === 'xs') {
+            setShowAll(false);
+        } else {
+            setShowAll(true);
+        }
+    }, [screenClass]);
     return (
         <SkillsWrapper id="skills">
             <PageHeader>My Skillsets</PageHeader>

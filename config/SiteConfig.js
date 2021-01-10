@@ -1,6 +1,6 @@
 const meta = {
     title: 'Rohit Bakoliya - Portfolio',
-    description: 'Full stack web developer and Competitive programmer',
+    description: 'Software developer and Competitive programmer',
     author: 'Rohit Bakoliya',
     siteUrl: 'https://rohitbakoliya.github.io',
     siteLogo: 'src/static/icon.png',

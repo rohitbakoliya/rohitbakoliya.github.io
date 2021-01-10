@@ -14,7 +14,7 @@ import GlobalStyles from '../../styles/GlobalStyles';
 import { RootWrapper } from './Layout.style';
 import '../Utils/fontLib';
 
-setConfiguration({ breakpoints: [480, 768, 1000, 1200] });
+setConfiguration({ breakpoints: [480, 769, 1000, 1200] });
 
 const Layout = ({ children }) => {
     const [theme, toggleTheme] = useTheme();

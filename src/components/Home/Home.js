@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="home__text">
                     <p>Hello, I'm</p>
                     <h1>ROHIT BAKOLIYA</h1>
-                    <p className="title">WEB DEVELOPER & COMPETITIVE PROGRAMMER</p>
+                    <p className="title">SOFTWARE DEVELOPER & COMPETITIVE PROGRAMMER</p>
                     <div className="home__text__cta">
                         <Button as="a" href={quickLinks.resume}>
                             Get My Resume

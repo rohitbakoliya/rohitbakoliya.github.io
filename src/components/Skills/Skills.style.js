@@ -20,7 +20,7 @@ export const SkillsIconsWrapper = styled.div`
     ${props =>
         !props.showAll &&
         css`
-            &:before {
+            &::after {
                 content: '';
                 width: 100%;
                 height: 300px;
@@ -37,7 +37,7 @@ export const SkillsIconsWrapper = styled.div`
         bottom: 50px;
         left: 50%;
         z-index: 6;
-        padding: 15px 40px;
+        padding: 15px 25px;
         font-weight: bold;
         transform: translateX(-50%);
     }
