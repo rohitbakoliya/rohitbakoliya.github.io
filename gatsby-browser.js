@@ -1,6 +1,4 @@
-require('typeface-nunito');
 require('typeface-montserrat');
-require('typeface-lato');
 require('typeface-mulish');
 
 require('./src/styles/prism-purpleking-dark.css');

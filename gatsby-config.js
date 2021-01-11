@@ -12,11 +12,12 @@ module.exports = {
         //site configs
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
-        'gatsby-plugin-offline',
         {
             resolve: 'gatsby-plugin-manifest',
             options: manifest,
         },
+        // his plugin should be listed after that plugin so the manifest file can be included in the service worker.
+        'gatsby-plugin-offline',
 
         //images transformer & source images
         'gatsby-plugin-sharp',
@@ -118,8 +119,15 @@ module.exports = {
                 showSpinner: false,
             },
         },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: meta.siteUrl,
+                sitemap: `${meta.siteUrl}/sitemap.xml`,
+                policy: [{ userAgent: '*', allow: '/' }],
+            },
+        },
         //others
         'gatsby-plugin-styled-components',
-        'gatsby-plugin-mdx',
     ],
 };
