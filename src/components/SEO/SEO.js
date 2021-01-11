@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
-import mainBanner from '../../static/images/main-banner.jpg';
+import mainBanner from '../../static/icon.png';
 
 const SEO = ({ title, description, slug, isBlog }) => {
     const {
