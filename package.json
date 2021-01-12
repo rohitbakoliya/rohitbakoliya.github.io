@@ -29,7 +29,7 @@
     "@icons-pack/react-simple-icons": "^3.13.0",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
-    "gatsby-image": "^2.8.0",
+    "gatsby-image": "^2.9.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
     "gatsby-plugin-manifest": "^2.9.0",
     "gatsby-plugin-nprogress": "^2.7.0",
