@@ -3,6 +3,8 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
-    time: "24:00"
+    interval: weekly
+    day: "sunday"
+  labels:
+    - "chore: npm dependencies"
   open-pull-requests-limit: 3
