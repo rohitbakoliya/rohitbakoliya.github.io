@@ -1,16 +1,26 @@
-name: Lighthouse CI
-on: [push]
+name: Lighthouse CI performance check
+on: [push, pull_request]
+
 jobs:
-  lighthouseci:
+  performance_check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
+      - name: Use Node
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
-      - run: npm install && npm install -g @lhci/cli@0.6.x
-      - run: npm run build
-      - run: lhci autorun
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          node-version: 12.x
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build website
+        run: npm run build --if-present
+
+      - name: Run Lighthouse against public directory
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: './lighthouserc.json'
+          runs: 3

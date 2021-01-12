@@ -2,8 +2,7 @@
     "ci": {
         "collect": {
             "url": ["https://rohitbakoliya.github.io"],
-            "numberOfRuns": 5,
-            "staticDistDir": "./public"
+            "numberOfRuns": 3
         },
         "assert": {
             "preset": "lighthouse:recommended",
@@ -16,7 +15,6 @@
                         "aggregationMethod": "optimistic"
                     }
                 ],
-                "works-offline": ["warn", { "aggregationMethod": "optimistic" }],
                 "interactive": [
                     "warn",
                     {
