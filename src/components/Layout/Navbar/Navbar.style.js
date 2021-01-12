@@ -16,9 +16,12 @@ export const NavWrapper = styled.header`
     z-index: 100;
 
     .logo {
+        margin-right: auto;
         cursor: pointer;
+
         img {
-            max-width: 35px;
+            flex-basis: 100px;
+            width: 35px;
         }
     }
 

@@ -39,11 +39,11 @@ const NavLinks = React.memo(props => {
     return (
         <>
             {window && window.location.pathname === '/' ? <SmoothLinks {...props} /> : <DefaultLinks {...props} />}
-            <NavItem>
+            {/* <NavItem>
                 <Link to="/blog" onClick={props.closeMenuInMob}>
                     blog
                 </Link>
-            </NavItem>
+            </NavItem> */}
         </>
     );
 });
