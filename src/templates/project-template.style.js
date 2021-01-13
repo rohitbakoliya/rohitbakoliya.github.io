@@ -23,6 +23,20 @@ export const ProjectWrapper = styled.section`
     ${props => props.theme.spacing.sectionTop};
     ${props => props.theme.spacing.sectionBottom};
 
+    /*custom headings styles for project-template*/
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 20px 0;
+        color: ${p => p.theme.primaryColor};
+    }
+
     li {
         margin: 5px 0;
     }
@@ -54,17 +68,5 @@ export const ProjectWrapper = styled.section`
     .project__iframe-container {
         width: 100%;
         margin: 10px 0;
-    }
-    h1 {
-        font-size: 1.8rem;
-        margin-bottom: 50px;
-    }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 20px 0;
-        color: ${p => p.theme.primaryColor};
     }
 `;
