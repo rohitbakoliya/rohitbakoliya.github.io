@@ -18,9 +18,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,html,css}\"",
+    "format": "prettier --write \"**/*.{js,jsx,md,html,css}\"",
     "format:js": "prettier --write \"**/*.{js,jsx}\"",
-    "format:styles": "prettier --write \"**/*.{css,scss}\"",
+    "format:css": "prettier --write \"**/*.{css,scss}\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
     "lint:js": "eslint src --fix",
     "lint:css": "stylelint src/**/*.js",
     "lint:md": "remark content/ --ignore-pattern __*.md"

@@ -1,48 +1,90 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://rohitbakoliya.github.io">
+    <img alt="Rohit Bakoliya" src="./src/static/logo.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
+<h1 align="center" style="color: #6D83F2">
+  Rohit Bakoliya
 </h1>
 
-## 🚀 Quick start
+![GitHub](https://img.shields.io/github/license/rohitbakoliya/chefs-arena?color=blue)
+![Github](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/deploy/master)
+![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.github.io)
 
-1.  **Create a Gatsby site.**
+<!-- Screenshot -->
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Quick Start
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```bash
+$ git clone https://github.com/rohitbakoliya/rohitbakoliya.github.io.git
+$ cd rohitbakoliya.github.io
+$ npm install
+$ npm start
+```
 
-2.  **Start developing.**
+## Technologies used
 
-    Navigate into your new site’s directory and start it up.
+-   Gatsby.js
+-   GraphQL
+-   Styled Component for styling
+-   Github workflows for CI/CD
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Audit Scores
 
-3.  **Open the code and start customizing!**
+-   [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rohitbakoliya.github.io)
 
-    Your site is now running at http://localhost:8000!
+-   [Page speed test](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frohitbakoliya.github.io%2F&tab=desktop)
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Features
 
-4.  **Learn more**
+-   Gatsby v2 support
+-   Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
+-   Blogs and Full-Project View in Markdown
 
-    -   [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    -   Code syntax highlighting
+        -   General syntax highlighting
+        -   Different Terminal Layout for `shell` and `bash`
+        -   Embed Code throught files
+    -   Embed Images
+    -   Embed YouTube videos
+    -   Embed Slides/Codepen/CodeSandBox
 
-    -   [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   Dark theme support
+-   Lottie animations
+-   Responsive design
+-   High configurability
+-   Automatic image transformation, size optimization and Lazy-loading
+-   IFrame Video Lazy-loading, loading once it comes in viewport while scrolling
 
-    -   [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   PWA features
 
-    -   [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    -   Offline support
+    -   Web App Manifest support
+    -   Loading progress for slow networks
 
-    -   [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   SEO
 
-    -   [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    -   Google Analytics support
+    -   Sitemap generation
+    -   robots.txt
+    -   General description tags
+    -   OpenGraph Tags (Facebook/Whatsapp/Pinterest)
+    -   Twitter Tags (Twitter Cards)
+
+-   Social features
+
+    -   Twitter share button
+    -   Facebook share button
+    -   LinkedIn share button
+
+-   Development tools
+
+    -   Prettier for code formatting
+    -   ESLint for js linting
+    -   StyleLint for styles linting
+    -   Remark-Lint for linting Markdown
+    -   Husky for linting staged commits
+
+## Author
+
+-   Rohit Bakoliya - [rohitbakoliya](https://github.com/rohitbakoliya)
