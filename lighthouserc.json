@@ -1,13 +1,19 @@
 {
     "ci": {
         "collect": {
-            "url": ["https://rohitbakoliya.github.io"],
-            "numberOfRuns": 3
+            "url": ["https://rohitbakoliya.github.io"]
         },
         "assert": {
-            "preset": "lighthouse:recommended",
             "assertions": {
-                "categories.pwa": "on",
+                "categories:pwa": [
+                    "error"
+                ],
+                "categories:seo": [
+                    "error"
+                ],
+                "categories:best-practices": [
+                    "warn"
+                ],
                 "first-contentful-paint": [
                     "warn",
                     {
@@ -21,13 +27,14 @@
                         "maxNumericValue": 8000,
                         "aggregationMethod": "optimistic"
                     }
-                ],
-                "uses-long-cache-ttl": "off",
-                "uses-http2": "off"
+                ]
             }
         },
         "upload": {
             "target": "temporary-public-storage"
+        },
+        "settings" : {
+            "emulatedFormFactor": "desktop"
         }
     }
 }
