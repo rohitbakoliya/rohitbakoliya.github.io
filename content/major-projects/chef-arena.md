@@ -10,17 +10,22 @@ iframe: https://www.youtube.com/embed/0TGNclKw8Q4
 demo: http://chefs-arena-rohit.netlify.app/
 src: https://github.com/rohitbakoliya/chefs-arena
 
-tags: [ReactJs, Netlify]
+tags:
+    - ReactJs
+    - Netlify
 
 date: 2020-03-20
 
 info:
-    tech: [React.js, Materialize CSS, Prism.js, Netlify]
+    tech: 
+        - React.js
+        - Materialize CSS
+        - Prism.js
+        - Netlify
     links:
-        - [
-              Complete Guide,
-              https://docs.google.com/presentation/d/1Dwo9V5oJQlxyXVn_QLnnFeW_yjr3vzd98-tNW7O4HXA/edit?usp=sharing,
-          ]
+        - 
+            - Complete Guide
+            - https://docs.google.com/presentation/d/1Dwo9V5oJQlxyXVn_QLnnFeW_yjr3vzd98-tNW7O4HXA/edit?usp=sharing
 ---
 
 ## Key features

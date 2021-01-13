@@ -6,7 +6,10 @@
   "author": "rohitbakoliya",
   "homepage": "https://rohitbakoliya.github.io",
   "keywords": [
+    "rohitbakoliya",
     "portfolio",
+    "personal",
+    "website",
     "gatsby"
   ],
   "scripts": {
@@ -20,7 +23,7 @@
     "format:styles": "prettier --write \"**/*.{css,scss}\"",
     "lint:js": "eslint src --fix",
     "lint:styles": "stylelint src/**/*.css",
-    "lint:md": "remark content/"
+    "lint:md": "remark content/ --ignore-pattern __*.md"
   },
   "license": "MIT",
   "dependencies": {
