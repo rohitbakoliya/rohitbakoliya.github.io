@@ -90,7 +90,7 @@ module.exports = {
             options: {
                 name: 'blogs',
                 path: `${__dirname}/content/blogs`,
-                ignore: [`${__dirname}/content/blogs/\__*`],
+                ignore: [`${__dirname}/content/blogs/\\__*`],
             },
         },
         //source markdown - major projects
@@ -99,7 +99,7 @@ module.exports = {
             options: {
                 name: 'major-projects',
                 path: `${__dirname}/content/major-projects`,
-                ignore: [`${__dirname}/content/major-projects/\__*`],
+                ignore: [`${__dirname}/content/major-projects/\\__*`],
             },
         },
         //source static pages
@@ -129,5 +129,6 @@ module.exports = {
         },
         //others
         'gatsby-plugin-styled-components',
+        'gatsby-plugin-eslint'
     ],
 };

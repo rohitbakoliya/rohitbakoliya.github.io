@@ -69,7 +69,6 @@ const MajorProjects = () => {
                                 src={node.frontmatter.iframe}
                             />
                             <Tags>
-                                {/*eslint no-sequences: "ignore"*/}
                                 {/* Converting array to object */}
                                 <IconsLib {...node.frontmatter.tags.reduce((x, y) => ((x[y] = true), x), {})} />
                             </Tags>
