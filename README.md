@@ -8,7 +8,7 @@
 </h1>
 
 ![GitHub](https://img.shields.io/github/license/rohitbakoliya/chefs-arena?color=blue)
-![Github](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/deploy/master)
+![Github](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/main/master)
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.github.io)
 
 <!-- Screenshot -->
@@ -68,6 +68,7 @@ $ npm start
     -   Sitemap generation
     -   robots.txt
     -   General description tags
+    -   Schema.org JSONLD tags (Google Rich Snippets)
     -   OpenGraph Tags (Facebook/Whatsapp/Pinterest)
     -   Twitter Tags (Twitter Cards)
 

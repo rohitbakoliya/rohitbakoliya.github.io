@@ -2,6 +2,7 @@ const meta = {
     title: 'Rohit Bakoliya - Portfolio',
     description: 'Software developer and Competitive programmer',
     author: 'Rohit Bakoliya',
+    email: 'bakoliyarohit00@gmail.com',
     siteUrl: 'https://rohitbakoliya.github.io',
     siteLogo: 'src/static/logo.svg',
     twitter: '@Rohit_Bakoliya',
