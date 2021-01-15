@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { HomeWrapper, Intro } from './Home.style';
-// import heroVectorBottom from '../../static/hero_vector_bottom.svg';
 import heroVectorRight from '../../static/hero_vector_right.svg';
 import { quickLinks } from '../../../config/SiteConfig';
 import Button from '../common/Button';
@@ -11,14 +10,13 @@ const Home = () => {
     return (
         <HomeWrapper id="home">
             <img className="vector-right" src={heroVectorRight} alt=""></img>
-            {/* <img className="vector-bottom" src={heroVectorBottom} alt="" ></img> */}
             <Intro>
                 <div className="home__text">
                     <p>Hello, I'm</p>
                     <h1>ROHIT BAKOLIYA</h1>
                     <p className="title">SOFTWARE DEVELOPER & COMPETITIVE PROGRAMMER</p>
                     <div className="home__text__cta">
-                        <Button as="a" href={quickLinks.resume}>
+                        <Button as="a" target="__blank" href={quickLinks.resume}>
                             Get My Resume
                         </Button>
                         <div className="home__text__cta__quickLinks">

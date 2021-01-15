@@ -7,7 +7,7 @@ excerpt:
     of COVID, and different helplines in India.
 
 iframe: major-projects_covid-19india.png
-demo: https://github.com/rohitbakoliya/covid-19INDIA/raw/master/app-release.apk
+demo: https://github.com/rohitbakoliya/COVID-19India/blob/master/README.md
 src: https://github.com/rohitbakoliya/COVID-19India
 
 tags:

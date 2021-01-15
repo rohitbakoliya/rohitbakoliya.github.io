@@ -13,7 +13,11 @@ const NavMobile = () => {
     };
     return (
         <NavMobileWrapper className={`${isMenuOpen ? 'active' : ''}`}>
-            <MenuButton onClick={() => setMenu(!isMenuOpen)} className={`${isMenuOpen ? 'active' : ''}`}>
+            <MenuButton
+                aria-label="menu"
+                onClick={() => setMenu(!isMenuOpen)}
+                className={`${isMenuOpen ? 'active' : ''}`}
+            >
                 <Burger open={isMenuOpen} />
             </MenuButton>
             <div className="nav">

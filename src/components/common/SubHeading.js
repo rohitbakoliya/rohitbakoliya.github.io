@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h3`
     margin: 100px auto 30px auto;
     font-size: 1.2rem;
     font-weight: 800;

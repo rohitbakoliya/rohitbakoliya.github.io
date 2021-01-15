@@ -1,11 +1,11 @@
 <p align="center">
   <a href="https://rohitbakoliya.github.io">
-    <img alt="Rohit Bakoliya" src="./src/static/logo.svg" width="60" />
+    <img alt="Rohit Bakoliya" src="./src/static/logo.svg" width="90" />
+    <h2 align="center">
+      Rohit Bakoliya
+    </h2>
   </a>
 </p>
-<h1 align="center" style="color: #6D83F2">
-  Rohit Bakoliya
-</h1>
 
 ![GitHub](https://img.shields.io/github/license/rohitbakoliya/chefs-arena?color=blue)
 ![Github](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/main/master)
@@ -44,7 +44,7 @@ $ npm start
     -   Code syntax highlighting
         -   General syntax highlighting
         -   Different Terminal Layout for `shell` and `bash`
-        -   Embed Code throught files
+        -   Embed Code through files
     -   Embed Images
     -   Embed YouTube videos
     -   Embed Slides/Codepen/CodeSandBox
