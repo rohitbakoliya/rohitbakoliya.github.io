@@ -7,8 +7,9 @@
   </a>
 </p>
 
-![GitHub](https://img.shields.io/github/license/rohitbakoliya/chefs-arena?color=blue)
-![Github](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/main/master)
+
+![GitHub](https://img.shields.io/github/license/rohitbakoliya/rohitbakoliya.github.io?color=brightgreen)
+![Build](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/Publish%20Portfolio?logo=GitHub)
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.github.io)
 
 <!-- Screenshot -->
