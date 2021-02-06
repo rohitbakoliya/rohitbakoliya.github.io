@@ -31,7 +31,7 @@ const quickLinks = {
     resume: 'https://drive.google.com/file/d/1porrnfQ33l1Qy7kcr7S4r6Ont_Mki-PZ/view?usp=sharing',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
-    linkedin: 'https://www.linkedin.com/in/rohit-bakoliya-766097177',
+    linkedin: 'https://www.linkedin.com/in/rohit-bakoliya',
     codeforce: 'https://codeforces.com/profile/rohitbakoliya',
     codechef: 'https://www.codechef.com/users/rohitbakoliya',
     hackerearth: 'https://www.hackerearth.com/@rohitbakoliya',

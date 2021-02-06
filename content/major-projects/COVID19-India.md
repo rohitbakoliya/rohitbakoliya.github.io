@@ -6,8 +6,8 @@ excerpt:
     2 months trend and daily changes. It also provides information about the COVID symptoms, preventions, transmission
     of COVID, and different helplines in India.
 
-iframe: major-projects_covid-19india.png
-demo: https://github.com/rohitbakoliya/COVID-19India/blob/master/README.md
+iframe: https://www.youtube.com/embed/T0BjchqcleE
+demo: https://github.com/rohitbakoliya/COVID-19India#download-apk
 src: https://github.com/rohitbakoliya/COVID-19India
 
 tags:
