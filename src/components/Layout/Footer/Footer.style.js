@@ -9,7 +9,6 @@ export const FooterWrapper = styled.footer`
     p,
     .emoji {
         font-size: 1rem;
-        line-height: 35px;
         color: white;
     }
 

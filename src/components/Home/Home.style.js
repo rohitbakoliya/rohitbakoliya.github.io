@@ -25,6 +25,8 @@ export const HomeWrapper = styled.section`
 
         .vector-right {
             top: 0px;
+            left: 0;
+            transform: rotateY(180deg);
             opacity: 0.8;
         }
     }

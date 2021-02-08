@@ -6,11 +6,13 @@ excerpt:
     2 months trend and daily changes. It also provides information about the COVID symptoms, preventions, transmission
     of COVID, and different helplines in India.
 
-iframe: major-projects_covid-19india.png
-demo: https://github.com/rohitbakoliya/covid-19INDIA/raw/master/app-release.apk
+iframe: https://www.youtube.com/embed/T0BjchqcleE
+demo: https://github.com/rohitbakoliya/COVID-19India#download-apk
 src: https://github.com/rohitbakoliya/COVID-19India
 
-tags: [Flutter, Dart]
+tags:
+    - Flutter
+    - Dart
 
 date: 2020-05-20
 
@@ -20,7 +22,9 @@ info:
         Indians regarding the deadly novel coronavirus. This app basically aims at providing information regarding the
         number of cases of affected people with the coronavirus, the number of casualties and the number of people
         recovered from the virus in their locality, city and their country.
-    tech: [Flutter, Dart]
+    tech: 
+        - Flutter
+        - Dart
 ---
 
 

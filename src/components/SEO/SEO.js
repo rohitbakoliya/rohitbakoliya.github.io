@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 import mainBanner from '../../static/icon.png';
 
-const SEO = ({ title, description, slug, isBlog }) => {
+const SEO = ({ title, description, slug, datePublished, isBlog }) => {
     const {
         site: { siteMetadata },
     } = useStaticQuery(graphql`
@@ -14,7 +14,9 @@ const SEO = ({ title, description, slug, isBlog }) => {
                     description
                     author
                     siteUrl
+                    siteLogo
                     twitter
+                    email
                 }
             }
         }
@@ -23,12 +25,65 @@ const SEO = ({ title, description, slug, isBlog }) => {
     description = description || siteMetadata.description;
 
     let url = `${siteMetadata.siteUrl}${slug || ''}`;
-    let twitter = siteMetadata.twitter;
+    let { twitter, email, author, siteLogo } = siteMetadata;
     let image = siteMetadata.siteUrl + mainBanner;
+
+    const authorJSONLD = {
+        '@type': 'Person',
+        name: author,
+        email: email,
+    };
+
+    const logoJSONLD = {
+        '@type': 'ImageObject',
+        url: `${url}/${siteLogo}`,
+    };
+
+    const schemaOrgJSONLD = [
+        {
+            '@context': 'http://schema.org',
+            '@type': 'WebSite',
+            url: `${url}`,
+            name: title,
+        },
+    ];
 
     if (isBlog) {
         title += ' | Rohit Bakoliya';
-        //TODO: add og:image for blogs
+        //TODO: add different image, logo
+        schemaOrgJSONLD.push(
+            {
+                '@context': 'http://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    {
+                        '@type': 'ListItem',
+                        position: 1,
+                        item: {
+                            '@id': `${siteMetadata.siteUrl}`,
+                            name: title,
+                            image,
+                        },
+                    },
+                ],
+            },
+            {
+                '@context': 'http://schema.org',
+                '@type': 'BlogPosting',
+                url: url,
+                name: title,
+                headline: title,
+                image: { '@type': 'ImageObject', url: image },
+                author: authorJSONLD,
+                publisher: {
+                    ...authorJSONLD,
+                    '@type': 'Organization',
+                    logo: logoJSONLD,
+                },
+                datePublished,
+                description,
+            }
+        );
     }
     return (
         <Helmet>
@@ -38,6 +93,9 @@ const SEO = ({ title, description, slug, isBlog }) => {
             <meta name="description" content={description} />
             <meta name="image" content={image} />
             <link rel="canonical" href={url} />
+
+            {/* Schema.org tags */}
+            <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
             {/* OpenGraph tags */}
             <meta property="og:url" content={url} />

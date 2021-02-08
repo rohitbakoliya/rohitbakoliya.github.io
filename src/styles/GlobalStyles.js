@@ -22,7 +22,6 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
         background-color: ${p => p.theme.bg};
         color: ${p => p.theme.primaryText};
-        transition: background-color .2s;
     }
     #___gatsby {
         overflow-x: hidden;

@@ -55,9 +55,21 @@ const BlogCSS = css`
         h6 {
             margin: 2.1em 0 0.5em 0;
             color: ${p => p.theme.primaryColor};
-
+            .gatsby-remark-autolink svg {
+                scale: 1.3;
+                margin-left: 18px;
+                margin-right: 8px;
+                fill: ${p => p.theme.primaryColor};
+                visibility: visible !important;
+                opacity: 0.5;
+            }
             &:hover .gatsby-remark-autolink svg {
                 opacity: 1;
+            }
+            @media ${p => p.theme.media.tablet} {
+                .gatsby-remark-autolink svg {
+                    margin-right: 4px;
+                }
             }
         }
 
@@ -80,15 +92,6 @@ const BlogCSS = css`
                     }
                 }
             }
-        }
-
-        .gatsby-remark-autolink svg {
-            scale: 1.3;
-            margin-left: 18px;
-            margin-right: 8px;
-            fill: ${p => p.theme.primaryColor};
-            visibility: visible !important;
-            opacity: 0.5;
         }
     }
 `;

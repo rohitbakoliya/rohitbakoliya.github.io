@@ -19,8 +19,9 @@ const About = () => (
                 Institute of Technology, Surat.
                 <br />
                 <br />
-                An enthusiastic software engineer working on modern web and mobile technologies to build powerful
-                applications with writing clean, efficient and modular code. I am especially focusing on Reactjs.
+                An enthusiastic software engineer working on modern web and mobile technologies to build
+                highly responsive, interactive, functional and scalable applications without losing any efficiency and
+                modularity of code. I am especially focusing on the MERN stack.
                 <br />
                 <br />
                 I'm also a good problem solver and competitive coder, have a good understanding of Data Structures and

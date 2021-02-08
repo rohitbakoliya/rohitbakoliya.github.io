@@ -1,0 +1,40 @@
+{
+    "ci": {
+        "collect": {
+            "url": ["https://rohitbakoliya.github.io"]
+        },
+        "assert": {
+            "assertions": {
+                "categories:pwa": [
+                    "error"
+                ],
+                "categories:seo": [
+                    "error"
+                ],
+                "categories:best-practices": [
+                    "warn"
+                ],
+                "first-contentful-paint": [
+                    "warn",
+                    {
+                        "maxNumericValue": 3000,
+                        "aggregationMethod": "optimistic"
+                    }
+                ],
+                "interactive": [
+                    "warn",
+                    {
+                        "maxNumericValue": 5000,
+                        "aggregationMethod": "optimistic"
+                    }
+                ]
+            }
+        },
+        "upload": {
+            "target": "temporary-public-storage"
+        },
+        "settings" : {
+            "emulatedFormFactor": "desktop"
+        }
+    }
+}

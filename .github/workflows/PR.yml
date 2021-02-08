@@ -1,0 +1,35 @@
+name: Test Runner
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Use Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm run test --if-present
+
+      - name: Build website
+        run: npm run build --if-present
+
+      - name: Run Lighthouse Audits
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: "./lighthouserc.json"
+          runs: 3

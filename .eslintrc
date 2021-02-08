@@ -1,0 +1,29 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "commonjs": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "prettier/react",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": ["react", "prettier", "react-hooks", "jsx-a11y"],
+    "rules": {
+        "react/prop-types": 0,
+        "newline-before-return": 0,
+        "react/no-unescaped-entities": 0,
+        "react/display-name": 0
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

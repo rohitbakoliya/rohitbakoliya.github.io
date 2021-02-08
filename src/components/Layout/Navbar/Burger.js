@@ -49,6 +49,7 @@ const BurgerWrapper = styled.div`
         -ms-transform: rotate(0);
         transform: rotate(0);
     }
+    /* stylelint-disable -- to remove no-duplicate-selectors bug for :after and :before */
     .burger .burger-lines:after {
         left: 0;
         top: -1em;
@@ -57,6 +58,7 @@ const BurgerWrapper = styled.div`
         left: 1em;
         top: 1em;
     }
+    /* stylelint-enable */
     .burger.burger-squeeze .burger-lines,
     .burger.burger-squeeze .burger-lines:after,
     .burger.burger-squeeze .burger-lines:before {

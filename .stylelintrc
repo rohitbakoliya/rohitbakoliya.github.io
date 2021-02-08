@@ -1,0 +1,14 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "rules" : {
+    "value-no-vendor-prefix" : null,
+    "property-no-vendor-prefix": null,
+    "declaration-block-no-shorthand-property-overrides": null
+  }
+}

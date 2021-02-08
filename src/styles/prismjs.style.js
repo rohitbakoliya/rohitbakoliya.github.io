@@ -21,6 +21,12 @@ const PrismJsStyles = css`
     .gatsby-highlight {
         position: relative;
 
+        /* remove line numbers for command prompt */
+        pre.language-bash,
+        pre.language-shell .line-numbers-rows {
+            display: none;
+        }
+
         /* actual code */
         code[class*='language-'] {
             background-color: transparent;
@@ -75,9 +81,9 @@ const PrismJsStyles = css`
                     position: relative;
                     left: -5px;
                     padding-left: 3px;
-                    background: #46495a;
+                    background-color: #46495a;
                     border-left: 2px solid #61dafb9e;
-                    background: linear-gradient(134deg, #46495a 0%, rgba(97, 218, 251, 0) 99%);
+                    background-image: linear-gradient(134deg, #46495a 0%, rgba(97, 218, 251, 0) 99%);
                     z-index: 1;
                 }
             }
@@ -107,17 +113,11 @@ const PrismJsStyles = css`
                 content: attr(data-prompt);
             }
         }
-
-        /* remove line numbers for command prompt */
+        /* remove line numbers extra padding */
         pre.language-bash,
-        pre.language-shell {
-            &.line-numbers {
-                padding-left: 0;
-                padding-right: 0;
-            }
-            .line-numbers-rows {
-                display: none;
-            }
+        pre.language-shell.line-numbers {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 `;

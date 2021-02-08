@@ -6,7 +6,10 @@
   "author": "rohitbakoliya",
   "homepage": "https://rohitbakoliya.github.io",
   "keywords": [
+    "rohitbakoliya",
     "portfolio",
+    "personal",
+    "website",
     "gatsby"
   ],
   "scripts": {
@@ -15,22 +18,26 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,html,css}\"",
+    "format": "prettier --write \"**/*.{js,jsx,md,html,css}\"",
     "format:js": "prettier --write \"**/*.{js,jsx}\"",
-    "format:styles": "prettier --write \"**/*.{css,scss}\""
+    "format:css": "prettier --write \"**/*.{css,scss}\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
+    "lint:js": "eslint src --fix",
+    "lint:css": "stylelint src/**/*.js",
+    "lint:md": "remark content/ --ignore-pattern __*.md"
   },
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@icons-pack/react-simple-icons": "^3.13.0",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
-    "gatsby-plugin-google-analytics": "^2.8.0",
+    "gatsby-plugin-google-analytics": "^2.9.0",
     "gatsby-plugin-manifest": "^2.9.0",
     "gatsby-plugin-nprogress": "^2.7.0",
     "gatsby-plugin-offline": "^3.7.0",
@@ -38,14 +45,14 @@
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-plugin-sitemap": "^2.10.0",
-    "gatsby-plugin-styled-components": "^3.7.0",
+    "gatsby-plugin-styled-components": "^3.10.0",
     "gatsby-remark-autolink-headers": "^2.9.0",
     "gatsby-remark-embed-snippet": "^4.8.0",
     "gatsby-remark-embedder": "^4.1.0",
     "gatsby-remark-images": "^3.9.0",
     "gatsby-remark-prismjs": "^3.11.0",
     "gatsby-source-filesystem": "^2.8.0",
-    "gatsby-transformer-json": "^2.8.0",
+    "gatsby-transformer-json": "^2.9.0",
     "gatsby-transformer-remark": "^2.14.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "intersection-observer": "^0.12.0",
@@ -58,7 +65,7 @@
     "react-intersection-observer": "^8.31.0",
     "react-lottie": "^1.2.3",
     "react-scroll": "^1.8.1",
-    "react-slick": "^0.27.13",
+    "react-slick": "^0.27.14",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
@@ -67,8 +74,28 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "husky": "^4.3.6",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-eslint": "^2.0.8",
+    "husky": "^4.3.7",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "remark-cli": "^9.0.0",
+    "remark-preset-lint-recommended": "^5.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
   }
 }
