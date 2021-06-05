@@ -6,5 +6,5 @@ updates:
       interval: weekly
       day: "sunday"
     labels:
-      - "chore: npm dependencies"
+      - "dependencies"
     open-pull-requests-limit: 3

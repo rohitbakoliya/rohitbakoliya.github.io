@@ -73,7 +73,7 @@ $ npm start
     -   OpenGraph Tags (Facebook/Whatsapp/Pinterest)
     -   Twitter Tags (Twitter Cards)
 
--   Social features
+-   Sharing features
 
     -   Twitter share button
     -   Facebook share button
