@@ -1,8 +1,16 @@
 [
     {
+        "title": "Investcrow",
+        "description": "Blockchain based solution to make secure transections in between startups and investors by creating digital agreements in ethereum based smart contract",
+        "links": {
+            "demo": "https://investcrow.herokuapp.com/",
+            "src": "https://github.com/rohitbakoliya/Investcrow"
+        }
+    },
+    {
         "title": "Find Your Book",
         "description": "A Flutter application that uses firebase as a backend service and provides a digital platform for book sharing among the college students",
-        "links":{
+        "links": {
             "demo": "https://github.com/rohitbakoliya/Find-Your-Book#glimpse",
             "src": "https://github.com/rohitbakoliya/Find-Your-Book"
         }
