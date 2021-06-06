@@ -58,6 +58,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 14px;
         line-height: 150%;
     }
+    hr {
+        border: 1px solid ${p => p.theme.accentColor};
+        margin: 30px 0;
+    }
 
     /* Scrollbar css */
     @media all and (min-width: 450px) {
