@@ -83,4 +83,9 @@ export const Intro = styled.section`
             }
         }
     }
+
+    @media ${props => props.theme.media.tablet} {
+        justify-content: center;
+        flex-direction: column;
+    }
 `;

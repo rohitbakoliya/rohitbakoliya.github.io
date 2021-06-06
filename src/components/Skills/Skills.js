@@ -30,6 +30,7 @@ const Skills = () => {
                     Javascript
                     Typescript
                     ReactJs
+                    Angular
                     Redux
                     Gatsby
                     Flutter
@@ -37,15 +38,14 @@ const Skills = () => {
                     Graphql
                     Mysql
                     Mongodb
+                    Redis
                     Firebase
-                    Nginx
                     Docker
                     Cplusplus
                     Python
-                    Dart
-                    Netlify
-                    Heroku
-                    Digitalocean
+                    Githubactions
+                    Jest
+                    Amazonaws
                 />
 
                 {!showAll && (
@@ -58,7 +58,7 @@ const Skills = () => {
                 <>
                     <SubHeading>Other Tools</SubHeading>
                     <SkillsIconsWrapper showAll={showAll}>
-                        <IconsLib Visualstudiocode Adobeillustrator Npm Yarn Webpack Babel Eslint Git Prettier />
+                        <IconsLib Visualstudiocode Adobeillustrator Eslint Git Linux Gnubash Canva />
                     </SkillsIconsWrapper>
                 </>
             )}

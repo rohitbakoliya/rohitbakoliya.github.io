@@ -20,12 +20,13 @@ const NavMobile = () => {
             >
                 <Burger open={isMenuOpen} />
             </MenuButton>
+            {console.log(isMenuOpen)}
             <div className="nav">
                 <div className="nav__content">
                     <NavItems className="nav__list">
                         <NavLinks closeMenuInMob={handleCloseMenu} />
                         <NavItem onClick={handleCloseMenu}>
-                            <ToggleSwitch />
+                            <ToggleSwitch isMenuOpen={isMenuOpen} />
                         </NavItem>
                     </NavItems>
                 </div>

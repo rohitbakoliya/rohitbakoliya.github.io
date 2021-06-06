@@ -15,17 +15,16 @@ const About = () => (
                 </AvatarWrapper>
             </div>
             <p>
-                Hello! I'm Rohit, a computer engineering undergrad currently studying at Sardar Vallabhbhai National
-                Institute of Technology, Surat.
+                Hello! I'm Rohit, a computer engineering undergraduate pursuing my bachelor's degree from NIT Surat.
                 <br />
                 <br />
-                An enthusiastic software engineer working on modern web and mobile technologies to build
-                highly responsive, interactive, functional and scalable applications without losing any efficiency and
-                modularity of code. I am especially focusing on the MERN stack.
+                An enthusiastic software engineer has proficiency in modern web and mobile technologies to build
+                highly responsive, functional, and scalable applications. I specialize in MERN stack and have experience
+                in Angular and Flutter.
                 <br />
                 <br />
-                I'm also a good problem solver and competitive coder, have a good understanding of Data Structures and
-                various Algorithms.
+                My area of interest includes, but not limited to: Design Patterns, JavaScript, React.js, API Design,
+                Microservices, AWS, SQL and NoSQL Databases
             </p>
         </AboutInfo>
     </AboutWrapper>

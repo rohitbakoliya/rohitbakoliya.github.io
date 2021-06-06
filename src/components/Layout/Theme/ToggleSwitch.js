@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import ToggleSwitchWrapper from './ToggleSwitch.style';
 import ThemeContext from './ThemeContext';
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ isMenuOpen }) => {
     const { toggleTheme, theme } = useContext(ThemeContext);
     return (
         <ToggleSwitchWrapper>
             <div className="label switch">
                 <input
+                    disabled={isMenuOpen ? false : true}
                     type="checkbox"
                     aria-label="toggle theme"
                     className="checkbox"
