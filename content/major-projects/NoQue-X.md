@@ -27,6 +27,7 @@ info:
         - Styled Components
         - Express.js
         - Node.js
+        - MongoDB
         - Socket.IO
         - Chrome Extension
         - jQuery
@@ -53,7 +54,13 @@ must be able to answer. After he explains a topic, using our extension he can br
 the students in a single click. Students will have to give answer by the time teacher has allocated for that question.
 Teacher can then move on to next topic and repeat the process when required. Using this, teacher can get feedback of how
 many students attempted and how many got it correct. Teacher also gets notified if a student who has joined the
-classroom does anything else except attending the class.
+classroom does anything else except attending the class. <br>
+
+> **TLDR** :
+>
+> -   Allow teachers to broadcast questions to the students during the online lecture meeting in real- time through
+>     chrome extension. <br>
+> -   Inbuilt lecture analysis and proctoring tools
 
 ### Techniqual Aspects
 
@@ -68,11 +75,38 @@ classroom does anything else except attending the class.
 -   Only the authenticated users who are students of the class can receive the Questions from respective teacher & are
     able to send responses
 
--   Also secured websockets connections throughout the Lecture
-
 ### Challanges we ran into
 
 -   Realtime dialog injection in meet on every question brodcasting event by teacher
+
+### Tools we used
+
+-   **React**
+
+    React is a JavaScript library that aims to simplify the development of visual interfaces.
+
+-   **Redux**
+
+    Redux is a JavaScript library for managing application state.
+
+-   **Ant Design**
+
+    A design system for the better user experience of enterprise applications
+
+-   **Styled Components**
+
+    Styled Components is a library for React that allows you to use component-level styles in your application that are
+    written with a mixture of JavaScript and CSS using a technique called CSS-in-JS
+
+-   **Express.js**
+
+    Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web
+    and mobile.
+
+-   **Socket.IO**
+
+    Socket.IO is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication
+    between web clients and servers.
 
 ### Contributors:
 

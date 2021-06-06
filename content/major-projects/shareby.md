@@ -22,6 +22,7 @@ info:
         - React.js
         - MongoDB
         - Heroku
+        - ReactContext API
         - Puppeteer API
         - Ant Design
         - Styled Components
@@ -41,10 +42,38 @@ info:
     -   Code image generation right from the editor
     -   Markdown rendering
 -   Rich Text editor
-    -   Basic _WYSIWYG_ Editor options
+    -   Basic WYSIWYG Editor options
     -   Youtube, Codepen can be embeded
     -   You can export the editor text as HTML or Markdown
 -   Generates a unique link to share code/text, and shared code/text can be viewed later on by that link
 -   You can also protect code/text sharing by password
 -   Shared code/text can be disposed of after a certain time by selecting _expiration time_
 -   Recent shares by others
+
+### Tools Used
+
+-   **React**
+
+    React is a JavaScript library that aims to simplify the development of visual interfaces.
+
+-   **Ant Design**
+
+    A design system for the better user experience of enterprise applications
+
+-   **Monaco Editor**
+
+    The Monaco Editor is the code editor that powers VS Code
+
+-   **Editor.js**
+
+    Editor.js is a javascript package that provides the solution for building rich text editors
+
+-   **Express.js**
+
+    Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web
+    and mobile.
+
+-   **Puppeteer**
+
+    Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium. Used for generating code
+    images by taking carbon screenshots([carbon.now.sh](https://carbon.now.sh)) from headless browser

@@ -24,16 +24,35 @@ info:
     tech:
         - Flutter
         - Dart
-        - Google Charts
     links:
         - - Download apk for android
           - https://github.com/rohitbakoliya/covid-19INDIA/raw/master/Covid19-INDIA.apk
 ---
 
-> NOTE: This app use [this](https://api.covid19india.org/) API to providing the resources.
+> NOTE: This app uses [covid19india API](https://api.covid19india.org/) to serve resources.
 
-### Overview
+### Features
 
--   Flutter application for analyzing COVID-19 updates in India with the help of a dashboard for total infected,
-    recovered, and deaths in different states/zones.
+-   Great User Interface
+-   Dashboard for total infected, recovered, and deaths in different states.
 -   Different graphs to see the past two months' trend and daily changes in India
+-   It provides information of covid cases different districts/cities/zones on India
+-   It also provides information about the COVID symptoms, preventions, transmission of COVID, FAQ's and different
+    helplines in India.
+
+### Tools Used
+
+-   **Flutter**
+
+    Flutter is a UI SDK that used to develop beautiful cross platfrom applications.
+
+-   **Flutter Charts**
+
+    Material Design data visualization library used to create beautiful animated graphs.
+
+---
+
+**UI Design**
+
+[UI Concept](https://www.uplabs.com/posts/coronavirus-information-concept) that is used in this app to serve better user
+experience

@@ -40,6 +40,48 @@ info:
 ![npm](https://img.shields.io/npm/dt/@rohitbakoliya/test-gen)
 ![node-current (scoped)](https://img.shields.io/node/v/@rohitbakoliya/test-gen)
 
+<details>
+
+<summary>Featured input types for generating the test cases </summary>
+
+-   Numbers
+-   Strings
+-   Arrays
+    -   Of Numbers
+    -   Of Strings
+    -   Permutation Array
+-   Grids
+    -   Of Numbers
+    -   Of Strings
+-   Trees
+    -   Weighted Tree
+    -   Unweighted Tree
+-   Graphs
+    -   Undirected Unweighted Graph
+    -   Directed Unweighted Graph
+    -   Directed Weighted Graph
+
+</details>
+
+### Tech stack
+
+-   **Node.js**
+
+    Node.js is used for writing CLI app.
+
+-   **TypeScript**
+
+    Typescript is used to enables the strict type checking.
+
+-   **Jest.js**
+
+    Jest.js is used for writing unit tests.
+
+-   **Github Actions**
+
+    Github Actions is used to automate the Continuous Integration(CI) workflows.<br> It builds the CLI and runs
+    integration test on different Node versions.
+
 ### Install
 
 ```shell
