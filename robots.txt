@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://rohitbakoliya.github.io/sitemap.xml
+Host: https://rohitbakoliya.github.io
