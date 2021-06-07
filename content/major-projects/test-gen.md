@@ -17,9 +17,9 @@ date: 2021-02-03
 
 info:
     idea:
-        Sometimes generating test-cases in between the contests to finding bugs is a bit tedious when it comes to
-        generating tests for complex pattern strings, trees, or graphs. Here I come with a solution, A interactive-CLI
-        that can generate test-cases of almost all input types.
+        Sometimes generating test cases in between the contests to finding bugs is a time-consuming task when it comes
+        to writing tests for complex pattern strings, trees, or graphs. Here I come with a solution, A interactive CLI
+        that can create test cases for you by answering simple questions.
     tech:
         - NodeDotJs
         - Typescript
@@ -80,7 +80,7 @@ info:
 -   **Github Actions**
 
     Github Actions is used to automate the Continuous Integration(CI) workflows.<br> It builds the CLI and runs
-    integration test on different Node versions.
+    unit test on different Node versions.
 
 ### Install
 
