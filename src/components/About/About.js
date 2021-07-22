@@ -15,12 +15,9 @@ const About = () => (
                 </AvatarWrapper>
             </div>
             <p>
-                Hello! I'm Rohit, a computer engineering undergraduate pursuing my bachelor's degree from NIT Surat.
-                <br />
-                <br />
-                An enthusiastic software engineer has proficiency in modern web and mobile technologies to build
-                highly responsive, functional, and scalable applications. I specialize in MERN stack and have experience
-                in Angular and Flutter.
+                Hello! I'm Rohit, a final year student at NIT Surat majoring in Computer Engineering. I'm a passionate
+                software engineer, having proficiency in modern web and mobile technologies to build highly responsive,
+                robust, and scalable applications. I specialize in MERN stack.
                 <br />
                 <br />
                 My area of interest includes, but not limited to: Design Patterns, JavaScript, React.js, API Design,

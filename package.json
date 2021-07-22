@@ -27,6 +27,15 @@
     "lint:md": "remark content/ --ignore-pattern __*.md"
   },
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/**/*.js": ["prettier --write", "eslint --cache", "stylelint .js"],
+    "./content/**/*.md": ["remark --frail --ignore-pattern __*.md"]
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",

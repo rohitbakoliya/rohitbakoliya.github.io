@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ToggleSwitchWrapper from './ToggleSwitch.style';
-import ThemeContext from './ThemeContext';
+import ThemeContext from '../../Theme/ThemeContext';
 
 const ToggleSwitch = ({ isMenuOpen = true }) => {
     const { toggleTheme, theme } = useContext(ThemeContext);

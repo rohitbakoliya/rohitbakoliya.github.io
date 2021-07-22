@@ -18,7 +18,7 @@ export const AboutInfo = styled.article`
     }
     p {
         color: #f8f8f8;
-        text-align: justify;
+        /* text-align: justify; */
     }
     a {
         color: ${props => (props.theme.dark ? props.theme.primaryColor : props.theme.primaryText)};

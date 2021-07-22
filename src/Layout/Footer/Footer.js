@@ -1,8 +1,8 @@
 import React from 'react';
 
-import logo from '../../../static/logo-white.svg';
+import logo from '../../static/logo-white.svg';
 import { FooterContent, FooterWrapper } from './Footer.style';
-import { quickLinks } from '../../../../config/SiteConfig';
+import { quickLinks } from '../../../config/SiteConfig';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => (
     <FooterWrapper>

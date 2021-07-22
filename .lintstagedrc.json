@@ -1,4 +1,0 @@
-{
-    "./src/**/*.js": ["prettier --write", "eslint --cache", "stylelint .js"],
-    "./content/**/*.md": ["remark --frail --ignore-pattern __*.md"]
-}
