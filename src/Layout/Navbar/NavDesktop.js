@@ -2,8 +2,8 @@ import React from 'react';
 import { Link as SLink } from 'react-scroll';
 import { NavItem, NavItems, NavContent } from './Navbar.style';
 import NavLinks from './NavLinks';
-import logo from '../../../static/logo.svg';
-import ToggleSwitch from '../Theme/ToggleSwitch';
+import logo from '../../static/logo.svg';
+import ToggleSwitch from './ToggleSwitch';
 import { Link } from 'gatsby';
 
 function NavDesktop() {

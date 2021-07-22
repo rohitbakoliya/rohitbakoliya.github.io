@@ -1,5 +1,5 @@
 const meta = {
-    title: 'Rohit Bakoliya - Portfolio',
+    title: 'Rohit Bakoliya | Portfolio',
     description: 'Software Enginner',
     author: 'Rohit Bakoliya',
     email: 'bakoliyarohit00@gmail.com',
@@ -28,7 +28,7 @@ const analytics = {
 
 const quickLinks = {
     email: 'mailto:bakoliyarohit00@gmail.com',
-    resume: 'https://drive.google.com/file/d/1qjn6cO_IOY5J3y8vsu5JJJylikyaVZTk/view?usp=sharing',
+    resume: 'https://drive.google.com/file/d/1oYsnIREbqBdCRcTkh5Uq3g_jouDqJ7sS/view?usp=sharing',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
     linkedin: 'https://www.linkedin.com/in/rohitbakoliya',

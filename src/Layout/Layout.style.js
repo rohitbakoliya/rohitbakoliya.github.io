@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Wrapper from '../common/Wrapper';
+import Wrapper from '../components/common/Wrapper';
 
 export const RootWrapper = styled(Wrapper)`
     margin-top: 100px;

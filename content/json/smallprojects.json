@@ -1,7 +1,7 @@
 [
     {
         "title": "Investcrow",
-        "description": "Blockchain based solution to make secure transections in between startups and investors by creating digital agreements in ethereum based smart contract",
+        "description": "Blockchain based solution to make trustful transections in between startups and investors by creating digital agreements in ethereum based smart contract",
         "links": {
             "demo": "https://investcrow.herokuapp.com/",
             "src": "https://github.com/rohitbakoliya/Investcrow"

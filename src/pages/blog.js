@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
+import Layout from '../Layout/Layout';
 import UnderConstruction from '../components/UnderConstruction/UnderConstruction';
 
 const Blog = () => {

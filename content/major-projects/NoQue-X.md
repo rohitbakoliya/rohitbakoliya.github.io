@@ -59,8 +59,8 @@ classroom does anything else except attending the class. <br>
 > **TLDR** :
 >
 > -   Allow teachers to broadcast questions to the students during the online lecture meeting in real- time through
->     chrome extension. <br>
-> -   Inbuilt lecture analysis and proctoring tools
+>     chrome extension and capture student’s responses <br>
+> -   Built lecture analysis dashboard and proctoring tool which can track student's various browsing activities
 
 ### Techniqual Aspects
 

@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import { setConfiguration } from 'react-grid-system';
 
 import { ThemeProvider } from 'styled-components';
-import ThemeContext from './Theme/ThemeContext';
-import useTheme from '../../hooks/useTheme';
-import { themelight, themedark } from './Theme/Theme';
+import ThemeContext from '../Theme/ThemeContext';
+import useTheme from '../hooks/useTheme';
+import { themelight, themedark } from '../Theme/Theme';
 
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
-import GlobalStyles from '../../styles/GlobalStyles';
+import GlobalStyles from '../styles/GlobalStyles';
 import { RootWrapper } from './Layout.style';
-import '../Utils/fontLib';
+import '../components/Utils/fontLib';
 
 setConfiguration({ breakpoints: [480, 769, 1000, 1200] });
 

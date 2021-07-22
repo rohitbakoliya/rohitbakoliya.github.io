@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { ProjectWrapper, InfoTitle } from './project-template.style';
-import Layout from '../components/Layout/Layout';
+import Layout from '../Layout/Layout';
 import SEO from '../components/SEO/SEO';
 import Flex from '../components/common/Flex';
 import { ProjectLinks } from '../components/Projects/MajorProjects.style';

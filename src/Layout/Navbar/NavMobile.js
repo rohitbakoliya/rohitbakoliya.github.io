@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ToggleSwitch from '../Theme/ToggleSwitch';
+import ToggleSwitch from './ToggleSwitch';
 import Burger from './Burger';
 import { NavItem, NavItems } from './Navbar.style';
 import NavLinks from './NavLinks';

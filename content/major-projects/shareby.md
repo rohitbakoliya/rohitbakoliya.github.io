@@ -28,10 +28,7 @@ info:
         - Styled Components
 ---
 
-> 💫 You can find a helper repository for generating code images over
-> [here](https://github.com/rohitbakoliya/carbon-ss-heroku)
-
-## Features
+### Features
 
 -   Awesome UI
 -   VS Code like Editor
@@ -77,3 +74,7 @@ info:
 
     Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium. Used for generating code
     images by taking carbon screenshots([carbon.now.sh](https://carbon.now.sh)) from headless browser
+
+
+> 💫 You can find a helper repository for generating code images over
+> [here](https://github.com/rohitbakoliya/carbon-ss-heroku)
