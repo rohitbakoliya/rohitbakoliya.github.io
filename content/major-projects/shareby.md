@@ -7,6 +7,7 @@ excerpt:
 iframe: major-projects_shareby-demo.png
 demo: https://shareby.herokuapp.com/
 src: https://github.com/rohitbakoliya/shareby
+pinned: true
 
 tags:
     - ReactJs

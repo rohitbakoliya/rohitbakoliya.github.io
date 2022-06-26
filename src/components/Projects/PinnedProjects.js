@@ -12,11 +12,11 @@ import {
     Tags,
 } from './MajorProjects.style';
 
-const MajorProjects = () => {
-    const majorProjects = useStaticQuery(graphql`
+const PinnedProject = () => {
+    let pinnedProjects = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
-                filter: { fields: { posttype: { eq: "major-projects" } } }
+                filter: { fields: { posttype: { eq: "major-projects" } }, frontmatter: { pinned: { eq: true } } }
                 sort: { fields: frontmatter___date, order: DESC }
             ) {
                 edges {
@@ -47,7 +47,7 @@ const MajorProjects = () => {
 
     return (
         <>
-            {majorProjects.allMarkdownRemark.edges.map(({ node }) => (
+            {pinnedProjects.allMarkdownRemark.edges.map(({ node }) => (
                 <ProjectsWrapper key={node.id}>
                     <ProjectsContent>
                         <ProjectsDetails>
@@ -82,4 +82,4 @@ const MajorProjects = () => {
     );
 };
 
-export default MajorProjects;
+export default PinnedProject;

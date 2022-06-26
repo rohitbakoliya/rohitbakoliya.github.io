@@ -11,7 +11,7 @@ import {
     faGoogle,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { faHandshake, faPaperPlane, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faPaperPlane, faHeart, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 library.add(
     // brand icons
     faGithub,
@@ -25,7 +25,8 @@ library.add(
     //other icons
     faHandshake,
     faPaperPlane,
-    faHeart
+    faHeart,
+    faAngleDoubleRight
 );
 
 config.autoAddCss = false;

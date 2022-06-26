@@ -16,6 +16,8 @@ demo: URL!
 
 src: URL!
 
+pinned: Boolean
+
 tags: [String]
 #these tags are rendered as icons and every tag must belong to this icons list https://bit.ly/3s7woCX
 

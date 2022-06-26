@@ -33,8 +33,14 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.js": ["prettier --write", "eslint --cache", "stylelint .js"],
-    "./content/**/*.md": ["remark --frail --ignore-pattern __*.md"]
+    "./src/**/*.js": [
+      "prettier --write",
+      "eslint --cache",
+      "stylelint .js"
+    ],
+    "./content/**/*.md": [
+      "remark --frail --ignore-pattern __*.md"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
