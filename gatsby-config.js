@@ -97,9 +97,9 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                name: 'major-projects',
-                path: `${__dirname}/content/major-projects`,
-                ignore: [`${__dirname}/content/major-projects/\\__*`],
+                name: 'projects',
+                path: `${__dirname}/content/projects`,
+                ignore: [`${__dirname}/content/projects/\\__*`],
             },
         },
         //source static pages

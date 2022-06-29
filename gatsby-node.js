@@ -1,6 +1,11 @@
 const path = require('path');
 const slugify = require('./src/components/Utils/slugify');
 
+const POST_TYPE = {
+    BLOGS: 'blogs',
+    PROJECTS: 'projects',
+};
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
     const { createNodeField } = actions;
 
@@ -9,7 +14,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const fileNode = getNode(node.parent);
     const actualSlug = slugify(node.frontmatter.title);
 
-    //{major-projects or blogs}
+    //{projects or blogs}
     const { sourceInstanceName } = fileNode;
 
     const slug = '/' + sourceInstanceName + '/' + actualSlug;
@@ -27,6 +32,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: 'posttype',
         value: sourceInstanceName,
     });
+
+    if (sourceInstanceName === POST_TYPE.PROJECTS) {
+        // this to sort the projects with their respective file name `00x--title`
+        const fileIndex = +fileNode.name.substr(0, 3);
+
+        createNodeField({
+            node,
+            name: 'fileIndex',
+            value: fileIndex,
+        });
+    }
 };
 
 //to make all formatterinfo fields optional
@@ -44,9 +60,8 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
+    const projectsTemplate = path.resolve(`./src/templates/project-template.js`);
 
-    // **Note:** The graphql function call returns a Promise
-    // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
     const result = await graphql(`
         query {
             allMarkdownRemark {
@@ -64,10 +79,10 @@ exports.createPages = async ({ graphql, actions }) => {
     `);
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.fields.posttype === 'major-projects') {
+        if (node.fields.posttype === POST_TYPE.PROJECTS) {
             createPage({
                 path: node.fields.slug,
-                component: path.resolve(`./src/templates/project-template.js`),
+                component: projectsTemplate,
                 context: {
                     // Data passed to context is available in page queries as GraphQL variables.
                     id: node.id,

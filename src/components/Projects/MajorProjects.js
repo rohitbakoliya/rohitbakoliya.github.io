@@ -13,11 +13,12 @@ import {
 } from './MajorProjects.style';
 
 const MajorProjects = () => {
+    // can use default sort: { fields: frontmatter___date, order: DESC }
     const majorProjects = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
-                filter: { fields: { posttype: { eq: "major-projects" } } }
-                sort: { fields: frontmatter___date, order: DESC }
+                filter: { fields: { posttype: { eq: "projects" } } }
+                sort: { fields: fields___fileIndex, order: DESC }
             ) {
                 edges {
                     node {

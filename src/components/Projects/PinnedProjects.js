@@ -13,11 +13,12 @@ import {
 } from './MajorProjects.style';
 
 const PinnedProject = () => {
+    // can use default sort: { fields: frontmatter___date, order: DESC }
     let pinnedProjects = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
-                filter: { fields: { posttype: { eq: "major-projects" } }, frontmatter: { pinned: { eq: true } } }
-                sort: { fields: frontmatter___date, order: DESC }
+                filter: { fields: { posttype: { eq: "projects" } }, frontmatter: { pinned: { eq: true } } }
+                sort: { fields: fields___fileIndex, order: DESC }
             ) {
                 edges {
                     node {
