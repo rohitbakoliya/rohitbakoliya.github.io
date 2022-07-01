@@ -60,7 +60,8 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
-    const projectsTemplate = path.resolve(`./src/templates/project-template.js`);
+    const projectTemplate = path.resolve(`./src/templates/project-template.js`);
+    const blogPostTemplate = path.resolve(`./src/templates/blog-template.js`);
 
     const result = await graphql(`
         query {
@@ -82,9 +83,27 @@ exports.createPages = async ({ graphql, actions }) => {
         if (node.fields.posttype === POST_TYPE.PROJECTS) {
             createPage({
                 path: node.fields.slug,
-                component: projectsTemplate,
+                component: projectTemplate,
                 context: {
                     // Data passed to context is available in page queries as GraphQL variables.
+                    id: node.id,
+                },
+            });
+        } else {
+            // create each individual blog post with `blogPostTemplate`
+            createPage({
+                path: node.fields.slug,
+                component: blogPostTemplate,
+                context: {
+                    id: node.id,
+                },
+            });
+
+            // create each individual blog post using id {/blogs/id}
+            createPage({
+                path: '/blogs/' + node.id,
+                component: blogPostTemplate,
+                context: {
                     id: node.id,
                 },
             });

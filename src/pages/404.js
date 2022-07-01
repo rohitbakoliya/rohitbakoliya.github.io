@@ -4,8 +4,8 @@ import Layout from '../Layout/Layout';
 import SEO from '../components/SEO/SEO';
 import styled from 'styled-components';
 
-import LostInSpace from '../static/lottie/404_not_found';
-import DisplayLottie from '../components/common/DisplayLottie';
+// import LostInSpace from '../static/lottie/404_not_found';
+// import DisplayLottie from '../components/common/DisplayLottie';
 
 const NFContent = styled.section`
     height: calc(80vh - 100px);
@@ -30,9 +30,7 @@ const NotFoundPage = () => {
         <Layout>
             <SEO title="404: Not Found" />
             <NFContent>
-                <div className="lottie">
-                    <DisplayLottie animationData={LostInSpace} />
-                </div>
+                <div className="lottie">{/* <DisplayLottie animationData={LostInSpace} /> */}</div>
                 <div className="text">
                     <h1>Look like you're lost</h1>
                     <p>The page you're looking for does not exist!</p>

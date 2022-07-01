@@ -1,19 +1,12 @@
 ---
-title: Blog Title
+title: Blog Title 2
 author: Rohit Bakoliya
-date: 2021-01-07
+date: 2021-05-11
+hide: true
 tags:
-    - 'xyz'
-    - 'abc'
-    - 'javascript'
-    - 'puppetier js'
-    - 'competitive programming'
-    - 'xyz'
-    - 'abc'
-    - 'javascript'
-    - 'puppetier js'
-    - 'react.js'
-    - 'node.js'
+    - 'mongodb'
+    - 'web3'
+    - 'networking'
 ---
 
 Sometimes generating test cases in between the contests to finding bugs is a time-consuming task when it comes to
