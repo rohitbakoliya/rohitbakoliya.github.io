@@ -8,3 +8,6 @@ updates:
     labels:
       - "dependencies"
     open-pull-requests-limit: 3
+    allow: 
+      - dependency-name: "*"
+      - dependency-type: "production"

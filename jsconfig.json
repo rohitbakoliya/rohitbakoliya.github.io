@@ -1,4 +1,0 @@
-{
-    "checkJs": true,
-    "exclude": ["node_modules", ".cache", "public"]
-}
