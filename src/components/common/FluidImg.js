@@ -4,21 +4,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
 const FluidImg = ({ src, ...rest }) => {
-    /*
-    This won't work because static queries can take variables - only pages
-
-    const { imageSharp } = useStaticQuery(
-        graphql`
-            query($src: String!) {
-                imageSharp(fluid: { originalName: { eq: $src } }) {
-                    fluid(quality: 90, maxWidth: 2000) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        `
-    );
-    */
     const { allImageSharp } = useStaticQuery(graphql`
         query {
             allImageSharp {

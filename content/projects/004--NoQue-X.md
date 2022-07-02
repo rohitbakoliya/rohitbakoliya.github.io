@@ -5,6 +5,7 @@ excerpt: An effective solution for better digital classrooms!
 iframe: https://www.youtube.com/embed/q-Npr7mLHXM
 demo: https://noque-x.herokuapp.com/
 src: https://github.com/C2OO13/NOQue-X
+pinned: true
 
 tags:
     - ReactJs

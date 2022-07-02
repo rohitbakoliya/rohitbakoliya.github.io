@@ -4,9 +4,10 @@ excerpt:
     Shareby is a web-based platform where anyone can write code/rich text in the inbuilt Code Editor/Rich Text Editor
     and share it with their colleagues and teammates.
 
-iframe: major-projects_shareby-demo.png
+iframe: projects_shareby-demo.png
 demo: https://shareby.herokuapp.com/
 src: https://github.com/rohitbakoliya/shareby
+pinned: true
 
 tags:
     - ReactJs

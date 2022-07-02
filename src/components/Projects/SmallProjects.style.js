@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const SmallProjectsWrapper = styled.section`
-    ${props => props.theme.spacing.sectionBottom}
-    ${props => props.theme.spacing.sectionTop}
+    ${props => props.theme.spacing.sectionBottom};
+    ${props => props.theme.spacing.sectionTop};
     width: 100%;
     height: 100%;
     .slick-slide {

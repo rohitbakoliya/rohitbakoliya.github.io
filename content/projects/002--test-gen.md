@@ -4,7 +4,7 @@ excerpt:
     Minimal interactive CLI, To quickly generate test-cases during the contest without wasting your time writing with
     your own.
 
-iframe: major-projects_test-gen.png
+iframe: projects_test-gen.png
 demo: https://www.npmjs.com/package/@rohitbakoliya/test-gen
 src: https://github.com/rohitbakoliya/test-gen
 

@@ -24,7 +24,7 @@
     "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
     "lint:js": "eslint src --fix",
     "lint:css": "stylelint src/**/*.js",
-    "lint:md": "remark content/ --ignore-pattern __*.md"
+    "lint:md": "remark content/ --ignore-pattern !__*.md"
   },
   "license": "MIT",
   "husky": {
@@ -33,8 +33,14 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.js": ["prettier --write", "eslint --cache", "stylelint .js"],
-    "./content/**/*.md": ["remark --frail --ignore-pattern __*.md"]
+    "./src/**/*.js": [
+      "prettier --write",
+      "eslint --cache",
+      "stylelint .js"
+    ],
+    "./content/**/*.md": [
+      "remark --frail --ignore-pattern !__*.md"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
