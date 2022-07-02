@@ -4,18 +4,9 @@ import { graphql, useStaticQuery } from 'gatsby';
 import BlogCard from '../components/Blog/BlogCard';
 import SEO from '../components/SEO/SEO';
 import BlogLayout from '../components/Blog/BlogLayout';
-import useTheme from '../hooks/useTheme';
 
-// eslint-disable-next-line no-unused-vars
-const BlogsPage = props => {
-    const [theme] = useTheme();
-    console.log(theme);
-    // // TODO: implement blog post filter by tags
-    // const params = new URLSearchParams(props.location.href);
-    // console.log(props);
-    // params.forEach(p => {
-    //     console.log(p);
-    // });
+const BlogsPage = () => {
+    // TODO: implement blog post filter by tags
     // const [activeTags, setActiveTags] = useState(new Set());
 
     const blogPosts = useStaticQuery(

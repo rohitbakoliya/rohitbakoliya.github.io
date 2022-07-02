@@ -6,15 +6,10 @@ import SocialShareSection from '../components/common/SocialShareSection';
 import SEO from '../components/SEO/SEO';
 import Layout from '../Layout/Layout';
 import { meta as siteConfig } from '../../config/SiteConfig';
-import useTheme from '../hooks/useTheme';
 
 const BlogPost = ({ data }) => {
-    const [theme] = useTheme();
-    console.log(theme);
-
     const { title, date } = data.markdownRemark.frontmatter;
-    // eslint-disable-next-line no-unused-vars
-    const { timeToRead, html, excerpt, id } = data.markdownRemark;
+    const { timeToRead, html, excerpt } = data.markdownRemark;
     const { slug } = data.markdownRemark.fields;
     const baseSlugUrl = siteConfig.siteUrl + slug;
 
