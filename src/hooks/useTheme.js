@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const useTheme = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState((typeof window != 'undefined' && localStorage.getItem('theme')) || 'light');
 
     const toggleTheme = useCallback(() => {
         if (theme === 'light') {
@@ -15,15 +15,14 @@ const useTheme = () => {
 
     useEffect(() => {
         const localTheme = localStorage.getItem('theme');
-        // const prefTheme = getPrefTheme();
+        const prefTheme = getPrefTheme();
         if (localTheme) {
             setTheme(localTheme);
-            // } else if (prefTheme) {
-            // setTheme(prefTheme);
+        } else if (prefTheme) {
+            setTheme(prefTheme);
         }
     }, []);
 
-    // eslint-disable-next-line no-unused-vars
     const getPrefTheme = () => {
         if (!window.matchMedia) return;
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
