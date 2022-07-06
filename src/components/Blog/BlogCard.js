@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { TagBreadcrumb } from './Tags';
-import slugify from '../Utils/slugify';
+import useFilterQuery from '../../hooks/useFilterQuery';
 
 const BlogWrapper = styled.article`
     overflow: auto;
@@ -41,16 +41,23 @@ export const BlogDateAndReadTime = ({ date, readtime }) => (
 );
 
 const BlogCard = ({ date, readtime, title, excerpt, slug, tags }) => {
+    const { activeTags, toggleTag } = useFilterQuery();
+
     return (
         <BlogWrapper>
             <BlogDateAndReadTime date={date} readtime={readtime} />
             <Link to={slug} aria-label={`${title} - read time ${readtime} minutes`}>
                 <h2>{title}</h2>
+                <p>{excerpt}</p>
             </Link>
-            <p>{excerpt}</p>
             <div style={{ marginTop: 20 }}>
                 {tags.map((tag, idx) => (
-                    <TagBreadcrumb key={idx} aria-label={`${tag} tag`} to={`/blogs?tags=${slugify(tag)}/`}>
+                    <TagBreadcrumb
+                        key={idx}
+                        aria-label={`${tag} tag`}
+                        onClick={() => toggleTag(tag)}
+                        isActive={activeTags.has(tag)}
+                    >
                         {tag}
                     </TagBreadcrumb>
                 ))}
