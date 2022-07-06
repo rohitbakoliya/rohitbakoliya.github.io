@@ -3,17 +3,19 @@ import { useEffect, useState } from 'react';
 import { globalHistory } from '@reach/router';
 
 const useFilterQuery = () => {
-    const [query, setQuery] = useState(new URLSearchParams(location.search).get('q'));
+    const [query, setQuery] = useState(new URLSearchParams(typeof window != 'undefined' && location.search).get('q'));
     const [activeTags, setActiveTags] = useState(new Set());
 
-    // https://stackoverflow.com/a/61664193/11922517
+    // listen for url change: https://stackoverflow.com/a/61664193/11922517
     useEffect(() => {
-        return globalHistory.listen(() => {
-            const nquery = new URLSearchParams(location.search).get('q');
-            setQuery(nquery);
-            let tags = [];
-            if (nquery) tags = nquery.split(',');
-            setActiveTags(new Set([...tags]));
+        return globalHistory.listen(({ action }) => {
+            if (action === 'PUSH') {
+                const nquery = new URLSearchParams(typeof window != 'undefined' && location.search).get('q');
+                setQuery(nquery);
+                let tags = [];
+                if (nquery) tags = nquery.split(',');
+                setActiveTags(new Set([...tags]));
+            }
         });
     }, [query]);
 
