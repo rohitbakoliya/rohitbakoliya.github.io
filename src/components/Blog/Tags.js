@@ -1,9 +1,9 @@
 import React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
-import slugify from '../Utils/slugify';
+import { graphql, useStaticQuery } from 'gatsby';
+import styled, { css } from 'styled-components';
+import useFilterQuery from '../../hooks/useFilterQuery';
 
-export const TagBreadcrumb = styled(Link)`
+export const TagBreadcrumb = styled.div`
     float: left;
     padding: 8px 13px;
     border: 1px solid ${p => (p.theme.dark ? p.theme.primaryColor : '#d9e0ff')};
@@ -13,7 +13,19 @@ export const TagBreadcrumb = styled(Link)`
     margin: 5px 5px 5px 0;
     font-size: 13px;
 
+    ${p =>
+        p.isActive
+            ? css`
+                  background: ${p => (p.theme.dark ? p.theme.primaryColor : '#d9e0ff')};
+                  color: ${p => (p.theme.dark ? '#d9e0ff' : '#6D83F2')};
+              `
+            : css`
+                  background-color: unset;
+                  color: unset;
+              `}
+
     &:hover {
+        cursor: pointer;
         background: ${p => (p.theme.dark ? p.theme.primaryColor : '#d9e0ff')};
         color: ${p => (p.theme.dark ? '#d9e0ff' : '#6D83F2')};
     }
@@ -39,13 +51,15 @@ export const useTags = () => {
 
 const Tags = () => {
     const tags = useTags();
+    const { activeTags, toggleTag } = useFilterQuery();
 
     return (
         <section style={{ overflow: 'auto' }}>
             {tags.allMarkdownRemark.group.map(tag => (
                 <TagBreadcrumb
                     key={tag.fieldValue}
-                    to={`/blogs?tags=${slugify(tag.fieldValue)}/`}
+                    onClick={() => toggleTag(tag.fieldValue)}
+                    isActive={activeTags.has(tag.fieldValue)}
                     aria-label={`${tag.totalCount} posts tagged with ${tag.fieldValue}`}
                 >
                     {tag.fieldValue}, {tag.totalCount}
