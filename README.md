@@ -7,7 +7,6 @@
   </a>
 </p>
 
-
 ![GitHub](https://img.shields.io/github/license/rohitbakoliya/rohitbakoliya.github.io?color=brightgreen)
 ![Build](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/Publish%20Portfolio?logo=GitHub)
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.github.io)
@@ -55,7 +54,7 @@ $ npm start
 -   Responsive design
 -   High configurability
 -   Automatic image transformation, size optimization and Lazy-loading
--   IFrame Video Lazy-loading, loading once it comes in viewport while scrolling
+-   IFrame Video Lazy-loading: Intersection Observer API
 
 -   PWA features
 
@@ -73,18 +72,12 @@ $ npm start
     -   OpenGraph Tags (Facebook/Whatsapp/Pinterest)
     -   Twitter Tags (Twitter Cards)
 
--   Sharing features
+-   Social Sharing features: Twitter, Facebook, LinkedIn
 
-    -   Twitter share button
-    -   Facebook share button
-    -   LinkedIn share button
-
--   Development tools
+-   Development tools:
 
     -   Prettier for code formatting
-    -   ESLint for js linting
-    -   StyleLint for styles linting
-    -   Remark-Lint for linting Markdown
+    -   ESLint, StyleLint and Remark-Lint for code linting
     -   Husky for linting staged commits
 
 ## Author
