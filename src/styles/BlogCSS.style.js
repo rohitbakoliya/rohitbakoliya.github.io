@@ -17,6 +17,7 @@ const BlogCSS = css`
         p {
             font-size: 16.5px;
             margin: 1em auto;
+            line-height: 160%;
         }
         blockquote p {
             word-break: break-word;

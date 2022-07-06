@@ -8,6 +8,14 @@
         }
     },
     {
+        "title": "Code Image Generator API",
+        "description": "REST API Endpoint that allows creating beautiful images from code using simple HTTP requests with the help of carbon.sh",
+        "links": {
+            "demo": "https://github.com/rohitbakoliya/carbon-ss-heroku#usage",
+            "src": "https://github.com/rohitbakoliya/carbon-ss-heroku"
+        }
+    },
+    {
         "title": "Find Your Book",
         "description": "A Flutter application that uses firebase as a backend service and provides a digital platform for book sharing among the college students",
         "links": {
@@ -16,27 +24,19 @@
         }
     },
     {
-        "title": "Drawing Brush",
-        "description": "Ranbow color brush to draw on HTML5 canvas",
-        "links": {
-            "demo": "https://rohitbakoliya.github.io/Drawing_isNot_Hard/",
-            "src": "https://github.com/rohitbakoliya/Drawing_isNot_Hard"
-        }
-    },
-    {
         "title": "CF Profile",
-        "description": "A Flutter based Cross Platform Application to view Codeforce Profile",
+        "description": "A Flutter based Cross Platform Application to view Codeforce Profile in Mobile phone",
         "links": {
             "demo": "https://github.com/rohitbakoliya/codeforces-profile",
             "src": "https://github.com/rohitbakoliya/codeforces-profile"
         }
     },
     {
-        "title": "Password Generator",
-        "description": "Generate Random Password on a single click",
+        "title": "Dotlash 4.0 Hackathon Website Design",
+        "description": "DotSlash is a 30 hours long hackathon which is completely managed by students of SVNIT, Surat.",
         "links": {
-            "demo": "https://rohitbakoliya.github.io/Random-Password-Generator/",
-            "src": "https://github.com/rohitbakoliya/Random-Password-Generator"
+            "demo": "https://hackdotslash.herokuapp.com/",
+            "src": "https://github.com/rohitbakoliya/Dotslash4.0"
         }
     },
     {
@@ -45,22 +45,6 @@
         "links": {
             "demo": "https://github.com/rohitbakoliya/World_Clock_App",
             "src": "https://github.com/rohitbakoliya/World_Clock_App"
-        }
-    },
-    {
-        "title": "Snake Game",
-        "description": "Classical snake game made with vanilla javascript and HTML5 canvas",
-        "links": {
-            "demo": "https://rohitbakoliya.github.io/snake-game/",
-            "src": "https://github.com/rohitbakoliya/snake-game"
-        }
-    },
-    {
-        "title": "Happy Bubbles",
-        "description": "Random bubbles floating in HTML5 canvas",
-        "links": {
-            "demo": "https://rohitbakoliya.github.io/Happy-bubbles/",
-            "src": "https://github.com/rohitbakoliya/Happy-bubbles"
         }
     }
 ]
