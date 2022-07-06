@@ -15,11 +15,14 @@ const useTheme = () => {
 
     useEffect(() => {
         const localTheme = localStorage.getItem('theme');
-        const prefTheme = getPrefTheme();
         if (localTheme) {
             setTheme(localTheme);
-        } else if (prefTheme) {
-            setTheme(prefTheme);
+        } else {
+            const prefTheme = getPrefTheme();
+            if (prefTheme) {
+                setTheme(prefTheme);
+                localStorage.setItem('theme', prefTheme);
+            }
         }
     }, []);
 

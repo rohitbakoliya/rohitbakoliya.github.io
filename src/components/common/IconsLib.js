@@ -30,6 +30,8 @@ import {
     Amazonaws,
     Jest,
     Cypress,
+    Flask,
+    ScikitLearn,
 
     // tools
     Visualstudiocode,
@@ -80,6 +82,8 @@ const IconsLib = props => (
         {props.Githubactions && <Githubactions />}
         {props.Cypress && <Cypress />}
         {props.Jest && <Jest />}
+        {props.Flask && <Flask />}
+        {props.ScikitLearn && <ScikitLearn />}
 
         {/* Tools */}
         {props.Visualstudiocode && <Visualstudiocode />}

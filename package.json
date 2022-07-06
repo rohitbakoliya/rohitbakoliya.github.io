@@ -39,7 +39,7 @@
       "stylelint .js"
     ],
     "./content/**/*.md": [
-      "remark --frail --ignore-pattern !__*.md"
+      "npm run lint:md"
     ]
   },
   "dependencies": {
