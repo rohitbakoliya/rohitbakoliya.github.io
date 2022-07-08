@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 const useTheme = () => {
     const [theme, setTheme] = useState((typeof window != 'undefined' && localStorage.getItem('theme')) || 'light');
+    console.log({ from: 'useTheme', theme });
 
     const toggleTheme = useCallback(() => {
         if (theme === 'light') {
@@ -22,6 +23,9 @@ const useTheme = () => {
             if (prefTheme) {
                 setTheme(prefTheme);
                 localStorage.setItem('theme', prefTheme);
+            } else {
+                setTheme('light');
+                localStorage.setItem('theme', 'light');
             }
         }
     }, []);
