@@ -15,7 +15,7 @@ const BlogCSS = css`
             word-break: break-word;
         }
         p {
-            font-size: 18px;
+            font-size: 17.5px;
             margin: 1em auto;
             line-height: 160%;
         }
@@ -77,7 +77,7 @@ const BlogCSS = css`
         ul,
         ol {
             font-family: ${p => p.theme.secondaryFontFamily};
-            font-size: 18px;
+            font-size: 17.5px;
             padding: 0 17px;
             line-height: 170%;
             text-indent: 0px;

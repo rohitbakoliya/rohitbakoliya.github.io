@@ -1,14 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Visible } from 'react-grid-system';
-import ThemeContext from '../../Theme/ThemeContext';
-
 import { NavWrapper } from './Navbar.style';
 import NavDesktop from './NavDesktop';
 import NavMobile from './NavMobile';
 
 function Navbar() {
-    const { theme } = useContext(ThemeContext);
-    console.log({ from: 'Navbar', theme });
     return (
         <>
             <NavWrapper>
