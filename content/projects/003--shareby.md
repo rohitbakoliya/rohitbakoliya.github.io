@@ -31,22 +31,46 @@ info:
 
 ### Features
 
--   Awesome UI
--   VS Code like Editor
+-   Awesome Reponsive UI
+
+-   Vs Code like Editor
+
     -   Dark Mode
-    -   Code Intellisense
-    -   Options to use custom editor configuration and they can be saved locally
-    -   You can export code
-    -   Code image generation right from the editor
-    -   Markdown rendering
--   Rich Text editor
-    -   Basic WYSIWYG Editor options
+    -   Options to use custom editor configuration
+    -   Generate images of codes right from the editor
+    -   Markdown preview
+    -   Allow to export codes
+
+-   Text editor
+
+    -   With WYSIWYG Editor options
     -   Youtube, Codepen can be embeded
-    -   You can export the editor text as HTML or Markdown
--   Generates a unique link to share code/text, and shared code/text can be viewed later on by that link
--   You can also protect code/text sharing by password
--   Shared code/text can be disposed of after a certain time by selecting _expiration time_
+    -   Export as HTML or Markdown
+
+-   Generates a unique link to share code/text
+
+-   Protect shares by adding password
+
+-   Options to decide when to expire links
+
 -   Recent shares by others
+
+<br>
+
+### Technical aspects
+
+-   Used _cryptographically-secure_ PRGN(CSPRGN) to generate unique urls. see
+    [benchmark tests](./server/test/uid.benchmark.txt)
+
+    `3 * 10^5` URIs per second with avg collision rate of ~ `0.0001%`
+
+-   Used in memory caching at application level for different HTTP requests
+
+-   Introduced HTTP caching for static resources and shared codes
+
+-   Used Puppeteer API to generate images using carbon [ref: [carbon.now.sh](https://carbon.now.sh)]
+
+<br>
 
 ### Tools Used
 
@@ -75,7 +99,6 @@ info:
 
     Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium. Used for generating code
     images by taking carbon screenshots([carbon.now.sh](https://carbon.now.sh)) from headless browser
-
 
 > 💫 You can find a helper repository for generating code images over
 > [here](https://github.com/rohitbakoliya/carbon-ss-heroku)
