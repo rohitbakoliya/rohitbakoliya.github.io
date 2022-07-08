@@ -17,7 +17,12 @@ module.exports = {
             options: manifest,
         },
         // his plugin should be listed after that plugin so the manifest file can be included in the service worker.
-        'gatsby-plugin-offline',
+        {
+            resolve: `gatsby-plugin-offline`,
+            options: {
+                precachePages: [`/`, `/projects/*`, `/blogs/*`],
+            },
+        },
 
         //images transformer & source images
         'gatsby-plugin-sharp',
@@ -129,6 +134,6 @@ module.exports = {
         },
         //others
         'gatsby-plugin-styled-components',
-        'gatsby-plugin-eslint'
+        'gatsby-plugin-eslint',
     ],
 };
