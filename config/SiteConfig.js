@@ -1,6 +1,6 @@
 const meta = {
-    title: 'Rohit Bakoliya | Portfolio',
-    description: 'Software Enginner',
+    title: 'Rohit Bakoliya - Software Engineer',
+    description: `Rohit Bakoliya - a passionate software engineer who loves building robust and scalable applications using modern web and mobile technologies. I also enjoy developing web apps and utility tools and solving real-world problems.`,
     author: 'Rohit Bakoliya',
     email: 'bakoliyarohit00@gmail.com',
     siteUrl: 'https://rohitbakoliya.github.io',
@@ -28,7 +28,7 @@ const analytics = {
 
 const quickLinks = {
     email: 'mailto:bakoliyarohit00@gmail.com',
-    resume: 'https://drive.google.com/file/d/1oYsnIREbqBdCRcTkh5Uq3g_jouDqJ7sS/view?usp=sharing',
+    resume: '#',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
     linkedin: 'https://www.linkedin.com/in/rohitbakoliya',

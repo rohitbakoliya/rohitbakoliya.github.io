@@ -16,7 +16,7 @@ const Home = () => {
                     <h1>ROHIT BAKOLIYA</h1>
                     <p className="title">SOFTWARE ENGINEER</p>
                     <div className="home__text__cta">
-                        <Button as="a" target="__blank" href={quickLinks.resume}>
+                        <Button as="a" href={quickLinks.resume}>
                             Get My Resume
                         </Button>
                         <div className="home__text__cta__quickLinks">

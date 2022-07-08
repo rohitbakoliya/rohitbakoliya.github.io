@@ -11,7 +11,7 @@ const themeCommon = {
     fontFamily:
         '"Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Apple Color Emoji","sans-serif", "Segoe UI Emoji", "Segoe UI Symbol"',
     secondaryFontFamily:
-        '"mulish", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Apple Color Emoji","sans-serif", "Segoe UI Emoji", "Segoe UI Symbol"',
+        '"system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Apple Color Emoji","sans-serif", "Segoe UI Emoji", "Segoe UI Symbol"',
     // otherFontFamily: '"lato", sans-serif',
     spacing: {
         sectionBottom: 'margin-bottom: 100px',

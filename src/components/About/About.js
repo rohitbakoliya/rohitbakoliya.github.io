@@ -15,13 +15,16 @@ const About = () => (
                 </AvatarWrapper>
             </div>
             <p>
-                Hello! I'm Rohit, a final year student at NIT Surat majoring in Computer Engineering. I'm a passionate
-                software engineer, having proficiency in modern web and mobile technologies to build highly responsive,
-                robust, and scalable applications. I specialize in MERN stack.
+                Hi! I'm Rohit Bakoliya, a recent graduate from NIT Surat in Computer Engineering, currently working at{' '}
+                <a href="https://avalara.com" target="__blank">
+                    Avalara
+                </a>{' '}
+                as a Software Engineer. I'm a passionate software engineer who loves building robust and scalable
+                applications using modern web and mobile technologies. I also enjoy developing web apps and utility
+                tools and solving real-world problems.
                 <br />
-                <br />
-                My area of interest includes, but not limited to: Design Patterns, JavaScript, React.js, API Design,
-                Microservices, AWS, SQL and NoSQL Databases
+                <br /> I am skilled in full-stack development and have experience with technologies and languages like
+                C/C++, Java, Javascript, Typescript, React, Node.JS, Python, and Rest API design.
             </p>
         </AboutInfo>
     </AboutWrapper>
