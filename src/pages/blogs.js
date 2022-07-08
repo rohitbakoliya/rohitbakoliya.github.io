@@ -13,7 +13,7 @@ const BlogsPage = () => {
         graphql`
             query {
                 allMarkdownRemark(
-                    filter: { fields: { posttype: { eq: "blogs" } }, frontmatter: { hide: { ne: true } } }
+                    filter: { fields: { posttype: { eq: "blogs" } } }
                     sort: { fields: frontmatter___date, order: DESC }
                 ) {
                     edges {

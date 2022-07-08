@@ -32,12 +32,11 @@ export const TagBreadcrumb = styled.div`
 `;
 
 export const useTags = () => {
+    // **use this in filter to hide blogs** frontmatter: { hide: { ne: true } }
+
     const tags = useStaticQuery(graphql`
         query {
-            allMarkdownRemark(
-                limit: 2000
-                filter: { fields: { posttype: { eq: "blogs" } }, frontmatter: { hide: { ne: true } } }
-            ) {
+            allMarkdownRemark(limit: 2000, filter: { fields: { posttype: { eq: "blogs" } } }) {
                 group(field: frontmatter___tags) {
                     fieldValue
                     totalCount
