@@ -18,7 +18,6 @@ setConfiguration({ breakpoints: [480, 769, 1000, 1200] });
 
 const Layout = ({ children }) => {
     const [theme, toggleTheme] = useTheme();
-    console.log({ from: 'Layout', theme });
     let currentTheme = theme === 'light' ? themelight : themedark;
     return (
         <ThemeProvider theme={currentTheme}>
