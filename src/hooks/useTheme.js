@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const useTheme = () => {
-    const [theme, setTheme] = useState((typeof window != 'undefined' && localStorage.getItem('theme')) || 'light');
-
+    const [theme, setTheme] = useState();
+    console.log({ from: 'useTheme', theme });
     const toggleTheme = useCallback(() => {
         if (theme === 'light') {
             localStorage.setItem('theme', 'dark');
