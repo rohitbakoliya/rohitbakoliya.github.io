@@ -1,19 +1,13 @@
 {
     "ci": {
         "collect": {
-            "url": ["https://rohitbakoliya.github.io"]
+            "staticDistDir": "./public"
         },
         "assert": {
             "assertions": {
-                "categories:pwa": [
-                    "error"
-                ],
-                "categories:seo": [
-                    "error"
-                ],
-                "categories:best-practices": [
-                    "warn"
-                ],
+                "categories:pwa": ["error"],
+                "categories:seo": ["error"],
+                "categories:best-practices": ["warn"],
                 "first-contentful-paint": [
                     "warn",
                     {
@@ -33,7 +27,7 @@
         "upload": {
             "target": "temporary-public-storage"
         },
-        "settings" : {
+        "settings": {
             "emulatedFormFactor": "desktop"
         }
     }
