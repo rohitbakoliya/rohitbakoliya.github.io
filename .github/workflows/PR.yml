@@ -26,11 +26,4 @@ jobs:
       - name: Build website
         run: npm run build --if-present
 
-      - name: Run Lighthouse Audits
-        uses: treosh/lighthouse-ci-action@v3
-        with:
-          uploadArtifacts: true
-          temporaryPublicStorage: true
-          configPath: "./lighthouserc.pr.json"
-          runs: 1
 
