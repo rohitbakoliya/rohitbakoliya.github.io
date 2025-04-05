@@ -31,5 +31,6 @@ jobs:
         with:
           uploadArtifacts: true
           temporaryPublicStorage: true
-          configPath: "./lighthouserc.json"
-          runs: 3
+          configPath: "./lighthouserc.pr.json"
+          runs: 1
+
