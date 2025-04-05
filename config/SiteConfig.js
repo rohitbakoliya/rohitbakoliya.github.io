@@ -27,15 +27,16 @@ const analytics = {
 };
 
 const quickLinks = {
-    email: 'mailto:bakoliyarohit00@gmail.com',
+    email: `mailto:${meta.email}`,
     resume: '#',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
+    instagram: 'https://www.instagram.com/rohitbakoliya',
     linkedin: 'https://www.linkedin.com/in/rohitbakoliya',
-    codeforce: 'https://codeforces.com/profile/rohitbakoliya',
+    twitter: meta.twitter,
     codechef: 'https://www.codechef.com/users/rohitbakoliya',
-    hackerearth: 'https://www.hackerearth.com/@rohitbakoliya',
 };
+
 module.exports = {
     meta,
     manifest,

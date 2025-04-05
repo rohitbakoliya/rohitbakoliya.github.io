@@ -1,5 +1,6 @@
 require('typeface-montserrat');
 require('typeface-mulish');
+require('typeface-karla');
 
 require('./src/styles/prism-purpleking-dark.css');
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');

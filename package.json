@@ -13,7 +13,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "develop": "cross-env GATSBY_DISABLE_RECIPES=true GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -84,6 +84,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
+    "typeface-karla": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
     "typeface-mulish": "^1.1.13"
   },
