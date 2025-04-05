@@ -21,8 +21,8 @@ const Home = () => {
                         </Button>
                         <div className="home__text__cta__quickLinks">
                             <IconLink label="email" icon={['fab', 'google']} href={quickLinks.email} />
-                            <IconLink label="github" icon={['fab', 'github']} href={quickLinks.github} />
                             <IconLink label="linkedIn" icon={['fab', 'linkedin-in']} href={quickLinks.linkedin} />
+                            <IconLink label="github" icon={['fab', 'github']} href={quickLinks.github} />
                         </div>
                     </div>
                 </div>
