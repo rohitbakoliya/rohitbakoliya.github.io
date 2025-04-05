@@ -15,16 +15,33 @@ const About = () => (
                 </AvatarWrapper>
             </div>
             <p>
-                Hi! I'm Rohit Bakoliya, a recent graduate from NIT Surat in Computer Engineering, currently working at{' '}
-                <a href="https://avalara.com" target="__blank">
-                    Avalara
-                </a>{' '}
-                as a Software Engineer. I'm a passionate software engineer who loves building robust and scalable
-                applications using modern web and mobile technologies. I also enjoy developing web apps and utility
-                tools and solving real-world problems.
+                <p>
+                    Hey there! I'm a backend engineer at{' '}
+                    <a href="https://bloomberg.com" target="__blank">
+                        Bloomberg
+                    </a>{' '}
+                    (since 2022), deeply passionate about building <strong>scalable</strong>,{' '}
+                    <strong>low-latency systems</strong> with clean architecture and solid infrastructure. I work
+                    primarily with <strong>C++, Python, Go and JavaScript</strong> — and have a soft spot for{' '}
+                    <strong>distributed systems</strong> and <strong>databases</strong>.{' '}
+                </p>
                 <br />
-                <br /> I am skilled in full-stack development and have experience with technologies and languages like
-                C/C++, Java, Javascript, Typescript, React, Node.JS, Python, and Rest API design.
+                <p>
+                    Beyond tech, I'm into coffee, music, photography, traveling, hiking, chess, and the gym life. I
+                    believe good code and good coffee are both crafted with care.{' '}
+                </p>
+                <br />
+                <p>
+                    <strong>Always open to backend engineering, infrastructure</strong>, or
+                    <strong> Gen AI/LLM-focused</strong> roles.
+                </p>
+                <br />
+                <p>
+                    <span role="img" aria-label="envelope with arrow">
+                        📬
+                    </span>{' '}
+                    Let's connect — or better yet, let's build something cool together!
+                </p>
             </p>
         </AboutInfo>
     </AboutWrapper>
