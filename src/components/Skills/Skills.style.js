@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Parallax } from 'react-scroll-parallax';
 
 export const SkillsWrapper = styled.section`
     ${props => props.theme.spacing.sectionBottom};
@@ -42,4 +43,23 @@ export const SkillsIconsWrapper = styled.div`
         transform: translateX(-50%);
     }
     max-height: ${p => (p.showAll ? '100%' : p.collapseHeight)};
+`;
+
+export const SkillsWordClouds = styled(Parallax)`
+    position: relative;
+    z-index: -1;
+
+    p {
+        position: absolute;
+        color: ${props => props.theme.accentColor};
+        z-index: -1;
+        left: 0;
+        right: 0;
+        font-weight: 900;
+        user-select: none;
+    }
+
+    @media ${props => props.theme.media.tablet} {
+        display: none;
+    }
 `;

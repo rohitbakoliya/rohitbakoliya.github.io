@@ -1,6 +1,6 @@
 const meta = {
     title: 'Rohit Bakoliya - Software Engineer',
-    description: `Rohit Bakoliya - a passionate software engineer who loves building robust and scalable applications using modern web and mobile technologies. I also enjoy developing web apps and utility tools and solving real-world problems.`,
+    description: `Backend engineer skilled in C++, Python, Go, and JavaScript. Passionate about scalable low-latency distributed systems, GenAI / LLM, and databases.`,
     author: 'Rohit Bakoliya',
     email: 'bakoliyarohit00@gmail.com',
     siteUrl: 'https://rohitbakoliya.github.io',

@@ -80,6 +80,7 @@
     "react-intersection-observer": "^8.31.0",
     "react-lottie": "^1.2.3",
     "react-scroll": "^1.8.1",
+    "react-scroll-parallax": "^3.4.5",
     "react-slick": "^0.27.14",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
