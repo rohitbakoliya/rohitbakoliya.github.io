@@ -28,7 +28,7 @@ const analytics = {
 
 const quickLinks = {
     email: `mailto:${meta.email}`,
-    resume: '#',
+    resume: 'resume.rohitbakoliya.com',
     github: 'https://github.com/rohitbakoliya',
     facebook: 'https://www.facebook.com/rohit.bakoliya.75/',
     instagram: 'https://www.instagram.com/rohitbakoliya',
