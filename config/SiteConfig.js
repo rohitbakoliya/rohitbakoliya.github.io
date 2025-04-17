@@ -3,7 +3,7 @@ const meta = {
     description: `Backend engineer skilled in C++, Python, Go, and JavaScript. Passionate about scalable low-latency distributed systems, GenAI / LLM, and databases.`,
     author: 'Rohit Bakoliya',
     email: 'bakoliyarohit00@gmail.com',
-    siteUrl: 'https://rohitbakoliya.github.io',
+    siteUrl: 'https://rohitbakoliya.com',
     siteLogo: 'src/static/logo.svg',
     twitter: '@Rohit_Bakoliya',
 };

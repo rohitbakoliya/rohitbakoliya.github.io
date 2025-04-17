@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rohitbakoliya.github.io">
+  <a href="https://rohitbakoliya.com">
     <img alt="Rohit Bakoliya" src="./src/static/logo.svg" width="90" />
     <h2 align="center">
       Rohit Bakoliya
@@ -8,8 +8,8 @@
 </p>
 
 ![GitHub](https://img.shields.io/github/license/rohitbakoliya/rohitbakoliya.github.io?color=brightgreen)
-![Build](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/Publish%20Portfolio?logo=GitHub)
-![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.github.io)
+![Build](https://img.shields.io/github/workflow/status/rohitbakoliya/rohitbakoliya.github.io/main.yml??branch=main&logo=GitHub)
+![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Frohitbakoliya.com)
 
 <!-- Screenshot -->
 
@@ -31,9 +31,9 @@ $ npm start
 
 ## Audit Scores
 
--   [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rohitbakoliya.github.io)
+-   [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rohitbakoliya.com)
 
--   [Page speed test](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frohitbakoliya.github.io%2F&tab=desktop)
+-   [Page speed test](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frohitbakoliya.com%2F&tab=desktop)
 
 ## Features
 
